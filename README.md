@@ -1,13 +1,13 @@
 # Crafting interactive narratives for art &amp; design <!-- omit from toc -->
 
 - [1. Touchdesigner Basics](#1-touchdesigner-basics)
-  - [Operator Families](#operator-families)
-  - [1.1. Specific Nodes](#11-specific-nodes)
-  - [1.2. Feedback Basic Setup](#12-feedback-basic-setup)
-  - [1.3. Noise Pointcloud Bacis Setup](#13-noise-pointcloud-bacis-setup)
+  - [1.1. Operator Families](#11-operator-families)
+  - [1.2. Specific Nodes](#12-specific-nodes)
+  - [1.3. Feedback Basic Setup](#13-feedback-basic-setup)
+  - [1.4. Noise Pointcloud Bacis Setup](#14-noise-pointcloud-bacis-setup)
 - [2. MCU - Micro Controller Unit](#2-mcu---micro-controller-unit)
-  - [Possible Sensors](#possible-sensors)
-  - [Gyroscope (GY-87)](#gyroscope-gy-87)
+  - [2.1. Possible Sensors](#21-possible-sensors)
+  - [2.2. Gyroscope (GY-87)](#22-gyroscope-gy-87)
 - [3. Films](#3-films)
   - [3.1. All that is solid](#31-all-that-is-solid)
   - [3.2. The Mess](#32-the-mess)
@@ -20,13 +20,19 @@
     - [4.1.3. How is the story told? (Medium, mood, other aspects?)](#413-how-is-the-story-told-medium-mood-other-aspects)
     - [4.1.4. What present leads to the depicted future?](#414-what-present-leads-to-the-depicted-future)
     - [4.1.5. What does the artist aim to make visible?](#415-what-does-the-artist-aim-to-make-visible)
+- [5. Group Project](#5-group-project)
+  - [5.1. Concept](#51-concept)
+  - [5.2. Arduino](#52-arduino)
+    - [5.2.1. Inspiration / Idea](#521-inspiration--idea)
+    - [5.2.2. Research](#522-research)
+    - [5.2.3. Touch Detection 01](#523-touch-detection-01)
 
 
 # 1. Touchdesigner Basics
 [Official Lerning Page](https://learn.derivative.ca/courses/100-fundamentals/)
 [Touchdesigner Wiki](https://docs.derivative.ca/)
 
-## Operator Families
+## 1.1. Operator Families
 - [Components (COMPs)](https://docs.derivative.ca/Component)
 - [Texture Operators (TOPs)](https://docs.derivative.ca/TOP)
 - [Channel Operators (CHOPs)](https://docs.derivative.ca/CHOP)
@@ -37,20 +43,20 @@
 ![Operator Dialogue](https://docs.derivative.ca/images/f/f2/Opcreate_CHOP.jpg)
 &copy; https://docs.derivative.ca/OP_Create_Dialog
 
-## 1.1. Specific Nodes
+## 1.2. Specific Nodes
 - Traill: Visualize nubers over time
 - Filter: Smooth out change of values
 - Lag: Smooth uneven, ease in
 - Spring: spring on value changes
 - Fan: Snap to defined number of values
 
-## 1.2. Feedback Basic Setup
+## 1.3. Feedback Basic Setup
 
-## 1.3. Noise Pointcloud Bacis Setup
+## 1.4. Noise Pointcloud Bacis Setup
 
 # 2. MCU - Micro Controller Unit
 
-## Possible Sensors
+## 2.1. Possible Sensors
 | Sensor Type                   | Short Explanation         |
 | :---------------------------- | :------------------------ |
 | Temperature Sensor            | Measures heat/cold        |
@@ -84,7 +90,7 @@
 | Chemical Sensor               | Detects chemicals         |
 | Environmental Sensor          | Monitors environment      |
 
-## Gyroscope (GY-87)
+## 2.2. Gyroscope (GY-87)
 [Running the gyroscope on an Arduino Uno](https://electropeak.com/learn/interfacing-gy-87-10dof-imu-mpu6050-hmc5883l-bmp085-module-with-arduino/)
 
 The provided code writes the sensor information in the "Serial Output". This can be read in Touchdesigner: 
@@ -187,3 +193,44 @@ Marie-Eve Levasseur wants to make visible:
 
 Ultimately, she encourages reflection on what is lost and what might be reimagined if we allowed the uncontrollable, emotional, and bodily dimensions of love back into our digital lives.
 
+# 5. Group Project
+
+## 5.1. Concept
+
+## 5.2. Arduino
+
+### 5.2.1. Inspiration / Idea
+Lucas mentioned once that you could mesure the static electricity a human has. This inspired me to search for a solution with a one wire touch detection. I imagened this a bit like a 3 pin sensor. Two Whires make the connection and the third controls the elictricity amount. So when you touch it, it works like a [Potentiometer](https://www.google.com/search?q=Potentiometer). Joya and Thomas mentioned, it would be easy to have two whires that detect a connection. That would be an okay fix but it doenst fit the purpose as much as a single whire. 
+
+I imagine to connect like 50 whires to this single one, so all of them detect touch and the amount of touch summes up. This would represent our idea of multiple people working together suitably.
+
+### 5.2.2. Research
+Before i tried to find the right words to google my idea, i explaned my vision to [Perplexity](https://www.perplexity.ai/) and ask for ideas and keywords to google. Additional to that, Perplexity gave me 2 diffrent aproches. After some chatting and researching the functionality, I went for a try on perplexities idea.
+
+[Chat with Perplexity](https://www.perplexity.ai/search/i-have-an-arduino-uno-i-want-t-TmeZzg8hTVuNVF7Y_H6DYw#0)
+
+### 5.2.3. Touch Detection 01
+For the whireing i looked up some reffrence:
+
+```
+[Arduino Uno]
+|                      |
+D4 (Send) ----- R1MΩ ----- D2 (Receive)  
+                       |  
+                       └──[Touch Wire]
+```
+![Reffrence](img/arduino_touch_whireing_01.png)
+
+I got the Arduino and whired it as shown in the reffrence. The only Problem: I had only one Resistor and i cant read the colorcode on it. 
+
+After whireing i copied the code in a new Arduino sketch and loaded it to the Arduino. 
+
+![Reffrence](img/arduino_touch_01.png)
+
+![Whireing](img/arduino_touch_02.jpg)
+
+At first, i just got the values "0". Perplexity told me, that probably my Resistor is to low, the heigher the better. Of course it could have other problems because it was an ai setup and code but i know the resistor has a very heigh chance to not be suitable. To increase the static electricity, i tried touching the metal part of the table. Surprisingly it worked! I wasnt expecting this to work but now i know the setups generally works and then i played arround with diffrend resistors. I found one that gave me height values when touching. An online calculator sais, its probably 2.5MΩ.
+
+<video controls width="600">
+  <source src="img/arduino_touch_03.mp4" type="video/mp4">
+</video>
