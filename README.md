@@ -8,24 +8,35 @@
 - [2. MCU - Micro Controller Unit](#2-mcu---micro-controller-unit)
   - [2.1. Possible Sensors](#21-possible-sensors)
   - [2.2. Gyroscope (GY-87)](#22-gyroscope-gy-87)
-- [3. Films](#3-films)
-  - [3.1. All that is solid](#31-all-that-is-solid)
-  - [3.2. The Mess](#32-the-mess)
-  - [3.3. Hardly Working](#33-hardly-working)
-  - [3.4. Writing for 5 min](#34-writing-for-5-min)
-- [4. Inspiration «Possible Futures?»](#4-inspiration-possible-futures)
-  - [4.1. Marie-Eve Levasseur, Swiping compressed filtered love (et enfin, permettre l’incontrôlable), 2019, 12 min](#41-marie-eve-levasseur-swiping-compressed-filtered-love-et-enfin-permettre-lincontrôlable-2019-12-min)
-    - [4.1.1. In what form is the future presented in the example?](#411-in-what-form-is-the-future-presented-in-the-example)
-    - [4.1.2. What story is being told, and who is telling it?](#412-what-story-is-being-told-and-who-is-telling-it)
-    - [4.1.3. How is the story told? (Medium, mood, other aspects?)](#413-how-is-the-story-told-medium-mood-other-aspects)
-    - [4.1.4. What present leads to the depicted future?](#414-what-present-leads-to-the-depicted-future)
-    - [4.1.5. What does the artist aim to make visible?](#415-what-does-the-artist-aim-to-make-visible)
-- [5. Group Project](#5-group-project)
-  - [5.1. Concept](#51-concept)
-  - [5.2. Arduino](#52-arduino)
-    - [5.2.1. Inspiration / Idea](#521-inspiration--idea)
-    - [5.2.2. Research](#522-research)
-    - [5.2.3. Touch Detection 01](#523-touch-detection-01)
+- [3. Inspiration \& Art Projects](#3-inspiration--art-projects)
+  - [3.1. Iconic Interactive Art Projects](#31-iconic-interactive-art-projects)
+    - [3.1.1. GENMA (Genetic Manipulator)](#311-genma-genetic-manipulator)
+  - [3.2. Films](#32-films)
+    - [3.2.1. All that is solid](#321-all-that-is-solid)
+    - [3.2.2. The Mess](#322-the-mess)
+    - [3.2.3. Hardly Working](#323-hardly-working)
+    - [3.2.4. Writing for 5 min](#324-writing-for-5-min)
+  - [3.3. Inspiration «Possible Futures?»](#33-inspiration-possible-futures)
+    - [3.3.1. Marie-Eve Levasseur, Swiping compressed filtered love (et enfin, permettre l’incontrôlable), 2019, 12 min](#331-marie-eve-levasseur-swiping-compressed-filtered-love-et-enfin-permettre-lincontrôlable-2019-12-min)
+      - [3.3.1.1. In what form is the future presented in the example?](#3311-in-what-form-is-the-future-presented-in-the-example)
+      - [3.3.1.2. What story is being told, and who is telling it?](#3312-what-story-is-being-told-and-who-is-telling-it)
+      - [3.3.1.3. How is the story told? (Medium, mood, other aspects?)](#3313-how-is-the-story-told-medium-mood-other-aspects)
+      - [3.3.1.4. What present leads to the depicted future?](#3314-what-present-leads-to-the-depicted-future)
+      - [3.3.1.5. What does the artist aim to make visible?](#3315-what-does-the-artist-aim-to-make-visible)
+- [4. Group Project](#4-group-project)
+  - [4.1. Concept](#41-concept)
+    - [4.1.1. Exhaustion](#411-exhaustion)
+    - [4.1.2. Early Ideas](#412-early-ideas)
+    - [4.1.3. Concept \& Story](#413-concept--story)
+  - [4.2. Prototyping](#42-prototyping)
+    - [4.2.1. Inspiration / Idea](#421-inspiration--idea)
+    - [4.2.2. Research](#422-research)
+    - [4.2.3. First Touch Detection](#423-first-touch-detection)
+    - [4.2.4. Materials \& Interaction](#424-materials--interaction)
+    - [4.2.5. Multi Touch Sensor](#425-multi-touch-sensor)
+    - [4.2.6. TouchDesinger](#426-touchdesinger)
+      - [4.2.6.1. Voronoi](#4261-voronoi)
+      - [4.2.6.2. Ice](#4262-ice)
 
 
 # 1. Touchdesigner Basics
@@ -42,7 +53,8 @@
 - [Data Operators (DATs)](https://docs.derivative.ca/DAT)
 
 ![Operator Dialogue](https://docs.derivative.ca/images/f/f2/Opcreate_CHOP.jpg)
-&copy; https://docs.derivative.ca/OP_Create_Dialog
+
+&copy; [https://docs.derivative.ca/OP_Create_Dialog](https://docs.derivative.ca/OP_Create_Dialog)
 
 ## 1.2. Specific Nodes
 - Traill: Visualize nubers over time
@@ -104,22 +116,42 @@ The provided code writes the sensor information in the "Serial Output". This can
 
 **The Arduino can only be connected to one Software! So the Arduino can't keep the connection with the Arduino IDE**
 
-# 3. Films
+# 3. Inspiration & Art Projects
 
-## 3.1. All that is solid
+## 3.1. Iconic Interactive Art Projects
+
+[List with all Projects](https://gu-ma.github.io/co_128_f2501/notes/week02_day03.html)
+
+### 3.1.1. GENMA (Genetic Manipulator)
+- Artists: Christa Sommerer and Laurent Mignonneau
+- Overview: An interactive installation where visitors can create and influence virtual creatures by sending messages.
+- Website: [https://interface.ufg.ac.at/christa-laurent/GENMA.html](https://interface.ufg.ac.at/christa-laurent/GENMA.html)
+
+![GENMA Box](img/genma/01_box.png)
+![GENMA Box Inside](img/genma/02_box.png)
+![GENMA Box Tablet](img/genma/03_screen.png)
+
+&copy; [(https://interface.ufg.ac.at/christa-laurent/GENMA.html](https://interface.ufg.ac.at/christa-laurent/GENMA.html)
+
+
+![Holographic Visualization](img/genma/04_projection.jpg)
+
+## 3.2. Films
+
+### 3.2.1. All that is solid
 - Gold in Ghana
 
-## 3.2. The Mess
+### 3.2.2. The Mess
 - Noise
 - Futuristic story told in the past
 
-## 3.3. Hardly Working
+### 3.2.3. Hardly Working
 - npc's in Red dead redemtion 2
 
-## 3.4. Writing for 5 min
+### 3.2.4. Writing for 5 min
 Erschöpfng ist keine energie mehr zu habne. keine Motivation. Viel Arbeit, keine Abwechsung. Ich bin erschöpft wenn ich keine Pausen habe. Wenn ich oft das gleiche mache ohne etwas daran zu ändern. Abwechslung ist wichtig um nicht erschöpft zu werden. bei allen Tätigkeiten werde ich erschöpft. es ist eine Balance zwischen erschöpfung und energie / recharge. es ist wichtig sich stetig zu erholen. machmal habe ich diese balance mehr im griff als zu anderen zeiten. Ich sollte mehr au diese banance achten. Es gibt viele Spakte welche mich erschöpfen lassen. meine eigene Energie oder sozial. Diese verschiedenen Energien im blick zu halten ist ebenfalls erschöpfend. Die Erholung ist dabei wichtig. Beim Arbeiten ist der Flow state für mich wichtig um nicht erschöpft zu werden. Der eigene Antrieb. intridische motivation. Externer zwang bringt mich aus dem gleichgewicht. ich bin nicht motiviert. das erschöpft mich. ich brache danach viel Zeit um micht wieder zu erholen.
 
-# 4. Inspiration «Possible Futures?»
+## 3.3. Inspiration «Possible Futures?»
 
 Questions:
 - In what form is the future presented in the example?
@@ -154,21 +186,21 @@ Of Whales, an immersive real-time video installation that offers a poetic medita
 Of Whales refocuses the source material’s profound meditation on knowledge, exoticism, and eroticism through a postcolonial lens, imagined from the perspective of the whale. The immensity of the ocean becomes a symbol of the unknown; reflections gesture to the presence of oblique perspectives and complexify the idea that any point of view is singular or straightforward. 
 [https://www.youtube.com/watch?v=pCmbQMpnDDU](https://www.youtube.com/watch?v=pCmbQMpnDDU)
 
-## 4.1. Marie-Eve Levasseur, Swiping compressed filtered love (et enfin, permettre l’incontrôlable), 2019, 12 min
+### 3.3.1. Marie-Eve Levasseur, Swiping compressed filtered love (et enfin, permettre l’incontrôlable), 2019, 12 min
 
-### 4.1.1. In what form is the future presented in the example?
+#### 3.3.1.1. In what form is the future presented in the example?
 
 The future is presented in a speculative and poetic form. It's not a technical or utopian future, but rather an artistic and **critical projection of current trends** in online dating and technology. This imagined future involves "slow-tech" devices that allow **hormonal emissions to be transmitted and perceived over distance-creating a hybrid between biological intimacy and digital interaction**.
 
 -> Software and Device
 
-### 4.1.2. What story is being told, and who is telling it?
+#### 3.3.1.2. What story is being told, and who is telling it?
 
 The story reflects an imagined evolution of dating technologies, where human pheromones and emotional signals are digitally translated and transmitted. It critiques how dating has become algorithmic, filtered, and consumer-like. 
 
 The narrator (possibly a voice-over or digital persona) presents the story from a reflective and somewhat speculative point of view—offering observations rather than a linear narrative. The storyteller could be interpreted as a future entity or consciousness looking back at present-day behavior.
 
-### 4.1.3. How is the story told? (Medium, mood, other aspects?)
+#### 3.3.1.3. How is the story told? (Medium, mood, other aspects?)
 
 - Medium: Video art (12 minutes), combining visual collage, digital aesthetics, voice-over narration, and possibly synthetic imagery or simulations of tech devices.
 - Mood: Reflective, critical, and slightly melancholic. There is a sense of irony and emotional distance, yet also curiosity and vulnerability.
@@ -176,7 +208,7 @@ The narrator (possibly a voice-over or digital persona) presents the story from 
 
 -> Video -> office, physical device, phone, screenrecording
 
-### 4.1.4. What present leads to the depicted future?
+#### 3.3.1.4. What present leads to the depicted future?
 
 The present depicted is dominated by:
 - Swipe-based dating apps (like Tinder) and the gamification of romantic connection.
@@ -185,7 +217,7 @@ The present depicted is dominated by:
 - A desire to "optimize" or control love and desire.
 This hyper-technologized and emotionally filtered present gives rise to the imagined future where hormonal signals are transmitted digitally to reintroduce uncontrollable, emotional complexity into digital interactions.
 
-### 4.1.5. What does the artist aim to make visible?
+#### 3.3.1.5. What does the artist aim to make visible?
 
 Marie-Eve Levasseur wants to make visible:
 
@@ -196,26 +228,42 @@ Marie-Eve Levasseur wants to make visible:
 
 Ultimately, she encourages reflection on what is lost and what might be reimagined if we allowed the uncontrollable, emotional, and bodily dimensions of love back into our digital lives.
 
-# 5. Group Project
+# 4. Group Project
 
-## 5.1. Concept
+## 4.1. Concept
 
-## 5.2. Arduino
+### 4.1.1. Exhaustion
 
-### 5.2.1. Inspiration / Idea
+In the whole class we thought about exhaustion as a topic, its content and what we are interested in. Based on the interest of Recovery, Sleep and Rest, Lucas, Cat, Nika and me met in a group.
+
+### 4.1.2. Early Ideas
+
+In the goup of four we individually thought about diffrent ideas and aspects. We knew we have to split up, so we came together and talked more about our intrests. So 2 Goups formd: Lucas and Cat / Nika and me. While Lucas and Cat where more intrested in the state of lying down and rest / sleep, Nika and I more thought about working together and caring for an entitiy, maybe also some part of play.
+
+Later we worked out our concept arroud the narrative of working together to resist the exhaustion. We named that as a working clame "Together resisting exhaustion". We wanted an installation to bring stranges together to work for a given goal. At the visit it should be clear that you cant acheave the goal alone or its really hard. So the people should realize to ask for help and come together. 
+
+We worked out a concept where we have a plant as the main entity the whole interaction was set up arround. We liked the idea of having people as energy and detect peoples enery and bring them to the entity. so people would touch a plant and as the people count goes up the plant starts living up.
+
+Later Joya joind our group and was intereted in doing a physical interaction. So we rethought our interactionpoint. With that we also adapted our concept and visualization while keeping the main narrative of bringing people together and acheave a heigher goal in a groupe than alone.
+
+### 4.1.3. Concept & Story
+
+## 4.2. Prototyping
+
+### 4.2.1. Inspiration / Idea
 Lucas mentioned once that you could mesure the static electricity a human has. This inspired me to search for a solution with a one wire touch detection. I imagened this a bit like a 3 pin sensor. Two Whires make the connection and the third controls the elictricity amount. So when you touch it, it works like a [Potentiometer](https://www.google.com/search?q=Potentiometer). Joya and Thomas mentioned, it would be easy to have two whires that detect a connection. That would be an okay fix but it doenst fit the purpose as much as a single whire. 
 
 I imagine to connect like 50 whires to this single one, so all of them detect touch and the amount of touch summes up. This would represent our idea of multiple people working together suitably.
 
-### 5.2.2. Research
+### 4.2.2. Research
 Before i tried to find the right words to google my idea, i explaned my vision to [Perplexity](https://www.perplexity.ai/) and ask for ideas and keywords to google. Additional to that, Perplexity gave me 2 diffrent aproches. After some chatting and researching the functionality, I went for a try on perplexities idea.
 
 [Chat with Perplexity](https://www.perplexity.ai/search/i-have-an-arduino-uno-i-want-t-TmeZzg8hTVuNVF7Y_H6DYw#0)
 
-### 5.2.3. Touch Detection 01
+### 4.2.3. First Touch Detection
 For the whireing i looked up some reffrence:
 
-```
+``` md
 [Arduino Uno]
 |                      |
 D4 (Send) ----- R1MΩ ----- D2 (Receive)  
@@ -226,7 +274,26 @@ D4 (Send) ----- R1MΩ ----- D2 (Receive)
 
 I got the Arduino and whired it as shown in the reffrence. The only Problem: I had only one Resistor and i cant read the colorcode on it. 
 
-After whireing i copied the code in a new Arduino sketch and loaded it to the Arduino. 
+After whireing i copied the code in a new Arduino sketch and loaded it to the Arduino. The [included library for the capacitive sensor i downloaded from github](https://github.com/PaulStoffregen/CapacitiveSensor).
+
+``` C++
+#include <CapacitiveSensor.h>
+
+// Create a capacitive sensor object with send pin 4 and receive pin 2
+CapacitiveSensor cs_4_2 = CapacitiveSensor(4, 2);
+
+void setup() {
+  Serial.begin(9600); // Start serial communication for output
+  cs_4_2.set_CS_AutocaL_Millis(0xFFFFFFFF); // Disable auto-calibration for stable readings
+}
+
+void loop() {
+  long sensorValue = cs_4_2.capacitiveSensor(30); // Take 30 samples for stability
+  Serial.println(sensorValue); // Print the sensor value to the Serial Monitor
+  //Serial.println("test");
+  delay(1000); // Small delay to make output readable
+}
+```
 
 ![Reffrence](img/arduino_touch_01.png)
 
@@ -237,3 +304,156 @@ At first, i just got the values "0". Perplexity told me, that probably my Resist
 <video controls width="600">
   <source src="img/arduino_touch_03.mp4" type="video/mp4">
 </video>
+
+### 4.2.4. Materials & Interaction
+The next step was testing the setup with diffrent threds and fabric.
+
+![Diffrenct Conductive Threds](img/arduino_threds_01.jpg)
+![Conductive Fabric](img/arduino_fabric_01.jpg)
+
+You probably can't see but here we hung some diffrent threds and whires and connected them all together wo the arduino. 
+
+![Threds_02](img/arduino_threds_02.jpg)
+
+No matter what and how many you touch, its ready the amount of electricity touching the whires. It was hard so setup for every single thred to have a stable connection. So sometime we got stable and relaiable resaults and other times we didnt.
+
+### 4.2.5. Multi Touch Sensor
+There was a diffrent sensor to try, one that can read diffrent touches at the same time. The downside, the output date should only be 0 or 1, so touch or no touch. First, we had to solder the conncetors to the sensor.
+
+![Multi Touch Sensor](img/arduino_sensor_01.jpg)
+
+For the connection we used first the whireing from [this Website](https://learn.sparkfun.com/tutorials/mpr121-hookup-guide/all).
+
+![Multi Touch Sensor Whireing](img/multi_touch_sensor_02.jpg)
+
+Due to the library not working properly, we went for the [library from adafruit](https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/wiring) included in the Arduino IDE.
+
+![Whireing and texting](img/multi_touch_sensor_01.jpg)
+
+There was a big problem using the Sensor. Pin 2 & 10 are constantly beeing read as touched. Additionally of loosing those 2 pins, the pins 4 - 11 (except of pin 10) did not react at all. only Pin 0, 1 and 3 work properly.
+
+I tested the example code from the Library.
+
+![Code Example Adafruit](img/multi_touch_sensor_03.png)
+
+``` C++
+#include <Wire.h>
+#include "Adafruit_MPR121.h"
+
+#ifndef _BV
+#define _BV(bit) (1 << (bit)) 
+#endif
+
+// You can have up to 4 on one i2c bus but one is enough for testing!
+Adafruit_MPR121 cap = Adafruit_MPR121();
+
+// Keeps track of the last pins touched
+// so we know when buttons are 'released'
+uint16_t lasttouched = 0;
+uint16_t currtouched = 0;
+
+void setup() {
+  Serial.begin(9600);
+
+  while (!Serial) { // needed to keep leonardo/micro from starting too fast!
+    delay(10);
+  }
+  
+  Serial.println("Adafruit MPR121 Capacitive Touch sensor test"); 
+  
+  // Default address is 0x5A, if tied to 3.3V its 0x5B
+  // If tied to SDA its 0x5C and if SCL then 0x5D
+  if (!cap.begin(0x5A)) {
+    Serial.println("MPR121 not found, check wiring?");
+    while (1);
+  }
+  Serial.println("MPR121 found!");
+}
+
+void loop() {
+  // Get the currently touched pads
+  currtouched = cap.touched();
+  
+  for (uint8_t i=0; i<12; i++) {
+    // it if *is* touched and *wasnt* touched before, alert!
+    if ((currtouched & _BV(i)) && !(lasttouched & _BV(i)) ) {
+      Serial.print(i); Serial.println(" touched");
+    }
+    // if it *was* touched and now *isnt*, alert!
+    if (!(currtouched & _BV(i)) && (lasttouched & _BV(i)) ) {
+      Serial.print(i); Serial.println(" released");
+    }
+  }
+
+  // reset our state
+  lasttouched = currtouched;
+
+  // comment out this line for detailed data from the sensor!
+  return;
+  
+  // debugging info, what
+  Serial.print("\t\t\t\t\t\t\t\t\t\t\t\t\t 0x"); Serial.println(cap.touched(), HEX);
+  Serial.print("Filt: ");
+  for (uint8_t i=0; i<12; i++) {
+    Serial.print(cap.filteredData(i)); Serial.print("\t");
+  }
+  Serial.println();
+  Serial.print("Base: ");
+  for (uint8_t i=0; i<12; i++) {
+    Serial.print(cap.baselineData(i)); Serial.print("\t");
+  }
+  Serial.println();
+  
+  // put a delay so it isn't overwhelming
+  delay(100);
+}
+```
+
+Further, i tested a Code provided from Perplexity. (it linked following websites as source: [Website 1](https://38-3d.co.uk/de/blogs/blog/so-verwenden-sie-den-kapazitiven-touch-sensor-mpr121-mit-arduino) / [Website 2](https://www.circuits-diy.com/interfacing-mpr121-capacitive-touch-sensor-module-with-arduino/))
+
+``` C++
+#include <Wire.h>
+#include "Adafruit_MPR121.h"
+
+Adafruit_MPR121 cap = Adafruit_MPR121();
+
+void setup() {
+  Serial.begin(9600);
+  while (!Serial) delay(10); // For Leonardo/Micro
+
+  Serial.println("Adafruit MPR121 Capacitive Touch sensor test");
+
+  if (!cap.begin(0x5A)) {
+    Serial.println("MPR121 not found, check wiring?");
+    while (1);
+  }
+  Serial.println("MPR121 found!");
+}
+
+void loop() {
+  uint16_t currtouched = cap.touched();
+  for (uint8_t i = 0; i < 12; i++) {
+    if (currtouched & (1 << i)) {
+      Serial.print(i); Serial.println(" touched");
+    }
+  }
+  delay(100);
+}
+```
+
+### 4.2.6. TouchDesinger
+the Arduino writes the detected values in the serial output. This can be read in TouchDesigner with the "Serial" DAT Operator. The input needs to be converted in numbers and rescaled to be used properly. in the example, the number gets divided by 1000, so we get smaller values and added by 0 to have values greater than 1. So the touch input is used to modify a noise texture.
+
+![alt text](img/touchdesigner_01.png)
+
+#### 4.2.6.1. Voronoi
+To have a basic water top visual, you can do it by just adding a voronoi texture and tweek the settings. TouchDesigner doesnt come with voronoi so we tried to imitate this texture.
+
+IMG
+
+#### 4.2.6.2. Ice
+We want a water visual to change based on parameter. we thought of having it icy at first, then it changes to more liquid and maybe also have some bubles later on. 
+
+First we started with just the more static icy like part.
+
+IMG
