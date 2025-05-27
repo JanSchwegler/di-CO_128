@@ -355,7 +355,7 @@ Due to the library not working properly, we went for the [library from adafruit]
 
 ![Whireing and texting](img/multi_touch_sensor_01.jpg)
 
-There was a big problem using the Sensor. Pin 2 & 10 are constantly beeing read as touched. Additionally of loosing those 2 pins, the pins 4 - 11 (except of pin 10) did not react at all. only Pin 0, 1 and 3 work properly.
+There was a big problem using the sensor. Pin 2 & 10 are constantly beeing read as touched. Additionally of loosing those 2 pins, the pins 4 - 11 (except of pin 10) did not react at all. only Pin 0, 1 and 3 work properly.
 
 I tested the example code from the Library.
 
@@ -434,7 +434,7 @@ void loop() {
 }
 ```
 
-Further, i tested a Code provided from Perplexity. (it linked following websites as source: [Website 1](https://38-3d.co.uk/de/blogs/blog/so-verwenden-sie-den-kapazitiven-touch-sensor-mpr121-mit-arduino) / [Website 2](https://www.circuits-diy.com/interfacing-mpr121-capacitive-touch-sensor-module-with-arduino/))
+Further, I tested a Code provided from perplexity. (it linked following websites as source: [Website 1](https://38-3d.co.uk/de/blogs/blog/so-verwenden-sie-den-kapazitiven-touch-sensor-mpr121-mit-arduino) / [Website 2](https://www.circuits-diy.com/interfacing-mpr121-capacitive-touch-sensor-module-with-arduino/))
 
 ``` C++
 #include <Wire.h>
@@ -467,21 +467,35 @@ void loop() {
 ```
 
 ### 4.2.6. TouchDesinger
-the Arduino writes the detected values in the serial output. This can be read in TouchDesigner with the "Serial" DAT Operator. The input needs to be converted in numbers and rescaled to be used properly. in the example, the number gets divided by 1000, so we get smaller values and added by 0 to have values greater than 1. So the touch input is used to modify a noise texture.
+The Arduino writes the detected values in the serial output. This can be read in TouchDesigner with the "Serial" DAT Operator. The input needs to be converted in numbers and rescaled to be used properly. In the example, the number gets divided by 1000, so we get smaller values and added by 0 to have values greater than 1. So the touch input is used to modify a noise texture.
 
 ![alt text](img/touchdesigner_01.png)
 
 #### 4.2.6.1. Voronoi
-To have a basic water top visual, you can do it by just adding a voronoi texture and tweek the settings. TouchDesigner doesnt come with voronoi so we tried to imitate this texture.
+To have a basic water top visual, you can do it by just adding a voronoi texture and tweek the settings. TouchDesigner doesn't come with voronoi so we tried to imitate this texture.
 
 IMG
 
 #### 4.2.6.2. Ice
-We want a water visual to change based on parameter. we thought of having it icy at first, then it changes to more liquid and maybe also have some bubles later on. 
+We want water as the entitiy and visual to change based on parameters of Arduino. We thought of having it icy at first, then it changes to more liquid state and maybe also have some bubbles later on. 
 
-First we started with just the more static icy like part.
+First we started with just the more static icy like part. It's a network with edges and feedbackloops.
 
-IMG
+![alt text](img/visuals/Ice_v1.png)
+
+We thought it could be a possibility to just substract the effects for our projects and leave the background blank or in one color so the Arduino input has an easier time. 
+
+![alt text](img/visuals/Onlyeffect.png)
+
+Then we made another network which was similar but for the water visual. 
+
+![alt text](img/visuals/WaterStateMedium.png)
+
+We then thought it would make more sense to have the same network and then let Arduino tweak some paramters in it. So we made based on the water visual and ice visual again but tweaked the paramters and left it the same otherwise.
+
+![alt text](img/visuals/IceStateFirst.png)
+
+Lastly we made a final state which would be shown when all the wired would get touched.
 
 ### Installation
 
