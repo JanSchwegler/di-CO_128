@@ -481,6 +481,7 @@ We want water as the entitiy and visual to change based on parameters of Arduino
 
 First we started with just the more static icy like part. It's a network with edges and feedbackloops.
 
+![alt text](img/visuals/NetworkIce.png)
 ![alt text](img/visuals/Ice_v1.png)
 
 We thought it could be a possibility to just substract the effects for our projects and leave the background blank or in one color so the Arduino input has an easier time. 
