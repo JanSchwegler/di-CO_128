@@ -243,34 +243,40 @@ Ultimately, she encourages reflection on what is lost and what might be reimagin
 
 ### 4.1.1. Exhaustion
 
-In the whole class we thought about exhaustion as a topic, its content and what we are interested in. Based on the interest of Recovery, Sleep and Rest, Lucas, Cat, Nika and me met in a group.
+In the whole class we thought about exhaustion as a topic, it's content and what we are interested in. Based on the interest of recovery, sleep and rest, Lucas, Cat, Nika and me met in a group.
 
 ### 4.1.2. Early Ideas
 
-In the goup of four we individually thought about diffrent ideas and aspects. We knew we have to split up, so we came together and talked more about our intrests. So 2 Goups formd: Lucas and Cat / Nika and me. While Lucas and Cat where more intrested in the state of lying down and rest / sleep, Nika and I more thought about working together and caring for an entitiy, maybe also some part of play.
+In the goup of four we individually thought about diffrent ideas and aspects. We knew we have to split up, so we came together and talked more about our intrests. Then, 2 Groups formd: Lucas and Cat / Nika and me. While Lucas and Cat were more intrested in the state of lying down and rest / sleep, Nika and I thought more about working together and caring for an entitiy, maybe also some part of play.
 
-Later we worked out our concept arroud the narrative of working together to resist the exhaustion. We named that as a working clame "Together resisting exhaustion". We wanted an installation to bring stranges together to work for a given goal. At the visit it should be clear that you cant acheave the goal alone or its really hard. So the people should realize to ask for help and come together. 
+Later we worked out our concept around the narrative of working together to resist the exhaustion. We named that as a working clame "Together resisting exhaustion". We wanted an installation to bring strangers together to work for a given goal. At the visit it should be clear that one person can't achieve the goal alone or it's really hard. So the people should realise to ask for help and come together. 
 
-We worked out a concept where we have a plant as the main entity the whole interaction was set up arround. We liked the idea of having people as energy and detect peoples enery and bring them to the entity. so people would touch a plant and as the people count goes up the plant starts living up.
+We worked out a concept where we have a plant as the main entity the whole interaction was set up around. We liked the idea of having people as energy and detect peoples energy and bring them to the entity. People would touch a plant and as the people count goes up the plant starts living up.
 
-Later Joya joind our group and was intereted in doing a physical interaction. So we rethought our interactionpoint. With that we also adapted our concept and visualization while keeping the main narrative of bringing people together and acheave a heigher goal in a groupe than alone.
+Later Joya joind our group and was intereted in doing a physical interaction. So we rethought our interactionpoint. With that we also adapted our concept and visualization while keeping the main narrative of bringing people together and achieve a heigher goal in a groupe than alone.
 
 ### 4.1.3. Concept & Story
+
+TBD
+Several conductive threads/ropes hang in width and length on a tree branch. These interact with the visual when touched. While it needs several people to touch it so the visual fully blooms up, there are in-between states as well to symbolise that something happens.
+
+Visual:
+Starting with ice. The more people touch the threads, the more the visual starts to "crack" and bubble and warm up. If all of the threads are touched, the visual is at it's peak.
 
 ## 4.2. Prototyping
 
 ### 4.2.1. Inspiration / Idea
-Lucas mentioned once that you could mesure the static electricity a human has. This inspired me to search for a solution with a one wire touch detection. I imagened this a bit like a 3 pin sensor. Two Whires make the connection and the third controls the elictricity amount. So when you touch it, it works like a [Potentiometer](https://www.google.com/search?q=Potentiometer). Joya and Thomas mentioned, it would be easy to have two whires that detect a connection. That would be an okay fix but it doenst fit the purpose as much as a single whire. 
+Lucas mentioned once that you could mesure the static electricity a human has. This inspired me to search for a solution with a one wire touch detection. I imagined this a bit like a 3 pin sensor. Two whires make the connection and the third controls the electricity amount. So when you touch it, it works like a [Potentiometer](https://www.google.com/search?q=Potentiometer). Joya and Thomas mentioned, it would be easy to have two whires that detect a connection. That would be an okay fix but it doesn't fit the purpose as much as a single whire. 
 
 I imagine to connect like 50 whires to this single one, so all of them detect touch and the amount of touch summes up. This would represent our idea of multiple people working together suitably.
 
 ### 4.2.2. Research
-Before i tried to find the right words to google my idea, i explaned my vision to [Perplexity](https://www.perplexity.ai/) and ask for ideas and keywords to google. Additional to that, Perplexity gave me 2 diffrent aproches. After some chatting and researching the functionality, I went for a try on perplexities idea.
+Before I tried to find the right words to google my idea, I explained my vision to [Perplexity](https://www.perplexity.ai/) and asked for ideas and keywords to google. Additional to that, Perplexity gave me 2 diffrent approaches. After some chatting and researching the functionality, I went for a try on perplexity's idea.
 
 [Chat with Perplexity](https://www.perplexity.ai/search/i-have-an-arduino-uno-i-want-t-TmeZzg8hTVuNVF7Y_H6DYw#0)
 
 ### 4.2.3. First Touch Detection
-For the whireing i looked up some reffrence:
+For the whiring I looked up some references.
 
 ``` md
 [Arduino Uno]
@@ -281,9 +287,9 @@ D4 (Send) ----- R1MΩ ----- D2 (Receive)
 ```
 ![Reffrence](img/arduino_touch_whireing_01.png)
 
-I got the Arduino and whired it as shown in the reffrence. The only Problem: I had only one Resistor and i cant read the colorcode on it. 
+I got the Arduino and whired it as shown in the reference. The only problem: I had only one resistor and I couldn't read the colorcode on it. 
 
-After whireing i copied the code in a new Arduino sketch and loaded it to the Arduino. The [included library for the capacitive sensor i downloaded from github](https://github.com/PaulStoffregen/CapacitiveSensor).
+After whiring I copied the code in a new Arduino sketch and loaded it to the Arduino. The [included library for the capacitive sensor i downloaded from github](https://github.com/PaulStoffregen/CapacitiveSensor).
 
 ``` C++
 #include <CapacitiveSensor.h>
@@ -308,7 +314,7 @@ void loop() {
 
 ![Whireing](img/arduino_touch_02.jpg)
 
-At first, i just got the values "0". Perplexity told me, that probably my Resistor is to low, the heigher the better. Of course it could have other problems because it was an ai setup and code but i know the resistor has a very heigh chance to not be suitable. To increase the static electricity, i tried touching the metal part of the table. Surprisingly it worked! I wasnt expecting this to work but now i know the setups generally works and then i played arround with diffrend resistors. I found one that gave me height values when touching. An online calculator sais, its probably 2.5MΩ.
+At first, I just got the values "0". Perplexity told me, that probably my resistor is too low, the heigher the better. Of course it could have other problems because it was an ai-setup and code but I know the resistor has a very heigh chance to not be suitable. To increase the static electricity, I tried touching the metal part of the table. Surprisingly it worked! I wasn't expecting this to work but now I know the setups generally works and then I played around with diffrent resistors. I found one that gave me height values when touching. An online calculator said, it's probably 2.5MΩ.
 
 <video controls width="600">
   <source src="img/arduino_touch_03.mp4" type="video/mp4">
@@ -324,17 +330,17 @@ You probably can't see but here we hung some diffrent threds and whires and conn
 
 ![Threds_02](img/arduino_threds_02.jpg)
 
-No matter what and how many you touch, its ready the amount of electricity touching the whires. It was hard so setup for every single thred to have a stable connection. So sometime we got stable and relaiable resaults and other times we didnt.
+No matter what and how many you touch, it's ready the amount of electricity touching the whires. It was hard so setup for every single thread to have a stable connection. So sometime we got stable and reliable results and other times we didn't.
 
 #### Crystals
 
-As we thougth about water and ice, transparent crystels came up as visualisazion of ice. so we tried growing crystals on a wooden branch.
+As we thougth about water and ice, transparent crystals came up as visualisation of ice. So we tried growing crystals on a wooden branch.
 
 ![Crystals](img/crystal_01.jpg)
 
-This worked well. Due to the ratio to be a bit off, the crystels grew to big. we would rather have smaller crystels.
+This worked well. Due to the ratio to be a bit off, the crystels grew to big. We would rather have smaller crystals.
 
-Later we also tought about the interactionpoint needs to be inviting to touch. Crystals look nice and people might likt to give it a little touch but not a firm grip, whats not beneficial for our installation.
+Later we also tought about the interaction-point needs to be inviting to touch. Crystals look nice and people might like to give it a little touch but not a firm grip. That's not beneficial for our installation.
 
 ### 4.2.5. Multi Touch Sensor
 There was a diffrent sensor to try, one that can read diffrent touches at the same time. The downside, the output date should only be 0 or 1, so touch or no touch. First, we had to solder the conncetors to the sensor.
