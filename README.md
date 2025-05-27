@@ -33,10 +33,19 @@
     - [4.2.2. Research](#422-research)
     - [4.2.3. First Touch Detection](#423-first-touch-detection)
     - [4.2.4. Materials \& Interaction](#424-materials--interaction)
+      - [Crystals](#crystals)
     - [4.2.5. Multi Touch Sensor](#425-multi-touch-sensor)
     - [4.2.6. TouchDesinger](#426-touchdesinger)
       - [4.2.6.1. Voronoi](#4261-voronoi)
       - [4.2.6.2. Ice](#4262-ice)
+    - [Installation](#installation)
+    - [Beamer Setup](#beamer-setup)
+  - [Production](#production)
+    - [Interaction](#interaction)
+    - [Text description](#text-description)
+    - [Final Setup](#final-setup)
+  - [Presentation](#presentation)
+  - [Reflection](#reflection)
 
 
 # 1. Touchdesigner Basics
@@ -317,6 +326,16 @@ You probably can't see but here we hung some diffrent threds and whires and conn
 
 No matter what and how many you touch, its ready the amount of electricity touching the whires. It was hard so setup for every single thred to have a stable connection. So sometime we got stable and relaiable resaults and other times we didnt.
 
+#### Crystals
+
+As we thougth about water and ice, transparent crystels came up as visualisazion of ice. so we tried growing crystals on a wooden branch.
+
+![Crystals](img/crystal_01.jpg)
+
+This worked well. Due to the ratio to be a bit off, the crystels grew to big. we would rather have smaller crystels.
+
+Later we also tought about the interactionpoint needs to be inviting to touch. Crystals look nice and people might likt to give it a little touch but not a firm grip, whats not beneficial for our installation.
+
 ### 4.2.5. Multi Touch Sensor
 There was a diffrent sensor to try, one that can read diffrent touches at the same time. The downside, the output date should only be 0 or 1, so touch or no touch. First, we had to solder the conncetors to the sensor.
 
@@ -457,3 +476,53 @@ We want a water visual to change based on parameter. we thought of having it icy
 First we started with just the more static icy like part.
 
 IMG
+
+### Installation
+
+To test the installation and interaction we connected the diffrent parts. We put the frame to test the diffrent whires infront od the beamer and connceted it through the arduino and touchdesigner to the beamer. 
+
+![Installation](img/installation_01.jpg)
+
+to make the ineraction work, we just remaped the values accordingly so, when noone touches it stands still and when 5 - 6 people touching i moves at maximum speed. additionally we added a filter to smooth out the valuechanges and a limit to clamp the vales and manually set a maximum and minimum. We tested the installation during our presentation. This worked okay, people were hesitating to touch and were not grabing the strings, more of touching it with one finger. Also the delay was a bit confusing. But generally it worked fine. We were happy with the test.
+
+![Touchdesinger Values](img/touchdesigner_02.png)
+
+![Interaction](img/installation_02.jpg)
+
+### Beamer Setup
+
+We wanted to test diffrent lighting. We thougt that the big beamer can steal the show from our physical interactionpoint. We have to palance this weight and maybe give our Interactionpoint some light. We also thought about having our visual on the interaction point. But we do rather not have any showdow on our beamer visuals and would like to have them visibel. that could be hard when we have the visuals on the physical strings. To not have the beamer laser peoples eyes, we tried to have indirect light from the beamer to the strings. If we can balance the light, we would have the visuals on a mobile wall that probalby out of fabric on one side the beamer and on the other side the visitors and the interactionpoint.
+
+``` markdown
+Interactionpoint    |   Fabic Wall    |   Beamer
+```
+
+So we tested the beamer on Fabric
+
+![Beamer on Fabric Projection](img/beamer_fabric_test_01.jpg)
+
+This works pretty well!
+
+![Light passig through](img/beamer_fabric_test_02.jpg)
+
+The big problem, there is no light passing through the fabric. That makes the purpose of the beamer towords the strings invalide. But we still have to test diffrent fabric and the smaller frame could still be beneficial later.
+
+
+
+## Production
+
+### Interaction
+To make the interaction more understandable and responsive we added features to make it more reactive on touch and release. This way visitors knnow their touch got recognized. We wanted to add flowing:
+- quick visual effect
+- small sound effect
+- touch indicator, to know how much energie is in the current system. 
+
+
+
+### Text description
+
+### Final Setup
+
+## Presentation
+
+## Reflection
