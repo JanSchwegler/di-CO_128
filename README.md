@@ -41,7 +41,12 @@
     - [Installation](#installation)
     - [Beamer Setup](#beamer-setup)
   - [Production](#production)
+    - [Wooden Branch](#wooden-branch)
+    - [Hardware](#hardware)
+    - [Visuals](#visuals)
     - [Interaction](#interaction)
+      - [Visual Effect](#visual-effect)
+      - [Touch Indicator](#touch-indicator)
     - [Text description](#text-description)
     - [Final Setup](#final-setup)
   - [Presentation](#presentation)
@@ -474,7 +479,11 @@ The Arduino writes the detected values in the serial output. This can be read in
 #### 4.2.6.1. Voronoi
 To have a basic water top visual, you can do it by just adding a voronoi texture and tweek the settings. TouchDesigner doesn't come with voronoi so we tried to imitate this texture.
 
-IMG
+![Voronoi Visual](img/voronoi_01.png)
+
+![Voronoi Network](img/voronoi_02.png)
+
+This voronoi setup is noise and feedback based. Thats a problem because its almost impossible to change the movement, especially the speed. Its a nice visual but not adaptable.
 
 #### 4.2.6.2. Ice
 We want water as the entitiy and visual to change based on parameters of Arduino. We thought of having it icy at first, then it changes to more liquid state and maybe also have some bubbles later on. 
@@ -528,9 +537,33 @@ This works pretty well!
 
 The big problem, there is no light passing through the fabric. That makes the purpose of the beamer towords the strings invalide. But we still have to test diffrent fabric and the smaller frame could still be beneficial later.
 
+We further tried with diffrend fabric and diffrend density.
 
+![Fabric Testing](img/beamer_fabric_test_03.jpg)
+
+We couldn't find good balance and think its almost impossible to have the light shining through without blinding the visitors and keeping the visuals on the fabric. Even a very thin fabric let almost no light throug but it was uncomftable looking at it because of the strong light.
 
 ## Production
+
+### Wooden Branch
+
+### Hardware
+We have most of our important hardware from the prototyping. The most important for us is a beamer, the arduino and a PC to run the touchdesigner on. To not use one of our laptops for the festival, we borrowed a desktop PC from the MediaDock.
+
+![PC](img/pc_01.jpg)
+
+### Visuals
+Since we had some visuals, the main part was connectig them together and controlling with the arduino.
+
+We had 3 diffrent visuals for 3 states: the beginning, just before reaching the goal and when the goal is reached. 2 "Cross" TOPs should blend between the visuals. 
+
+Because we had a value from 0 to 1 for the blending, we had to split that into 0 - 0.5 and 0.5 - 1. Those values had to be remaped to 0 - 1 to work with the Cross.
+
+![Blend Visuals](img/touchdesigner_04.png)
+
+To control the corss with arduino we took the value stream, set the limit for "no touch" and "goal is reached", remaped the values from 0 - 1 and added a filter to smooth out the stream and avoid strong jumping. 
+
+![Arduino Controls](img/touchdesigner_05.png)
 
 ### Interaction
 To make the interaction more understandable and responsive we added features to make it more reactive on touch and release. This way visitors knnow their touch got recognized. We wanted to add flowing:
@@ -538,7 +571,19 @@ To make the interaction more understandable and responsive we added features to 
 - small sound effect
 - touch indicator, to know how much energie is in the current system. 
 
+#### Visual Effect
+The visual effect is split is 3 parts: the trigger, the effect player and the effect itself. The trigger has a variable with a measure dealy of 0.3 seconds and a threshold of 2000. so it compares the current value with the value 0.3 seconds ago, if there is a change of more than 2000, there is a trigger signal going to the offect player. Thsis contains of a timer, a durration an a logic to prevent the player to trigger again while its running. While running its outputs a fraction between 0 and 1. The effect contains 3 circle that grow bigger, wich use the fraction as radius with a offset of 0.2 to run after echother. The circles are then used for a displace.
 
+![Network Visual Effect](img/touchdesigner_07.png)
+
+#### Touch Indicator
+First we just added a text from 0 to 1 to indicate the touch. We simply took the normalized valuestram from the Arduino, added a lag update every 0.5 seconds, round the calues to every 0.1. In the text operator we used following expression for the text to make sure wo only display 3 characters of the value and added a string to show the goal.
+
+```
+f"{str(op('touch_value_rounded')[0])[:3]} / 1"
+```
+
+![Network Touch Indicator](img/touchdesigner_06.png)
 
 ### Text description
 
