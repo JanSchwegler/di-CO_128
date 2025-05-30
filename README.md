@@ -33,24 +33,24 @@
     - [4.2.2. Research](#422-research)
     - [4.2.3. First Touch Detection](#423-first-touch-detection)
     - [4.2.4. Materials \& Interaction](#424-materials--interaction)
-      - [Crystals](#crystals)
+      - [4.2.4.1. Crystals](#4241-crystals)
     - [4.2.5. Multi Touch Sensor](#425-multi-touch-sensor)
     - [4.2.6. TouchDesinger](#426-touchdesinger)
       - [4.2.6.1. Voronoi](#4261-voronoi)
       - [4.2.6.2. Ice](#4262-ice)
-    - [Installation](#installation)
-    - [Beamer Setup](#beamer-setup)
-  - [Production](#production)
-    - [Wooden Branch](#wooden-branch)
-    - [Hardware](#hardware)
-    - [Visuals](#visuals)
-    - [Interaction](#interaction)
-      - [Visual Effect](#visual-effect)
-      - [Touch Indicator](#touch-indicator)
-    - [Text description](#text-description)
-    - [Final Setup](#final-setup)
-  - [Presentation](#presentation)
-  - [Reflection](#reflection)
+    - [4.2.7. Installation](#427-installation)
+    - [4.2.8. Beamer Setup](#428-beamer-setup)
+  - [4.3. Production](#43-production)
+    - [4.3.1. Wooden Branch](#431-wooden-branch)
+    - [4.3.2. Hardware](#432-hardware)
+    - [4.3.3. Visuals](#433-visuals)
+    - [4.3.4. Interaction](#434-interaction)
+      - [4.3.4.1. Visual Effect](#4341-visual-effect)
+      - [4.3.4.2. Touch Indicator](#4342-touch-indicator)
+    - [4.3.5. Text description](#435-text-description)
+    - [4.3.6. Final Setup](#436-final-setup)
+  - [4.4. Presentation](#44-presentation)
+  - [4.5. Reflection](#45-reflection)
 
 
 # 1. Touchdesigner Basics
@@ -337,7 +337,7 @@ You probably can't see but here we hung some diffrent threds and whires and conn
 
 No matter what and how many you touch, it's ready the amount of electricity touching the whires. It was hard so setup for every single thread to have a stable connection. So sometime we got stable and reliable results and other times we didn't.
 
-#### Crystals
+#### 4.2.4.1. Crystals
 
 As we thougth about water and ice, transparent crystals came up as visualisation of ice. So we tried growing crystals on a wooden branch.
 
@@ -507,7 +507,7 @@ We then thought it would make more sense to have the same network and then let A
 
 Lastly we made a final state which would be shown when all the wired would get touched.
 
-### Installation
+### 4.2.7. Installation
 
 To test the installation and interaction we connected the diffrent parts. We put the frame to test the diffrent whires infront od the beamer and connceted it through the arduino and touchdesigner to the beamer. 
 
@@ -519,7 +519,7 @@ to make the ineraction work, we just remaped the values accordingly so, when noo
 
 ![Interaction](img/installation_02.jpg)
 
-### Beamer Setup
+### 4.2.8. Beamer Setup
 
 We wanted to test diffrent lighting. We thougt that the big beamer can steal the show from our physical interactionpoint. We have to palance this weight and maybe give our Interactionpoint some light. We also thought about having our visual on the interaction point. But we do rather not have any showdow on our beamer visuals and would like to have them visibel. that could be hard when we have the visuals on the physical strings. To not have the beamer laser peoples eyes, we tried to have indirect light from the beamer to the strings. If we can balance the light, we would have the visuals on a mobile wall that probalby out of fabric on one side the beamer and on the other side the visitors and the interactionpoint.
 
@@ -543,16 +543,16 @@ We further tried with diffrend fabric and diffrend density.
 
 We couldn't find good balance and think its almost impossible to have the light shining through without blinding the visitors and keeping the visuals on the fabric. Even a very thin fabric let almost no light throug but it was uncomftable looking at it because of the strong light.
 
-## Production
+## 4.3. Production
 
-### Wooden Branch
+### 4.3.1. Wooden Branch
 
-### Hardware
+### 4.3.2. Hardware
 We have most of our important hardware from the prototyping. The most important for us is a beamer, the arduino and a PC to run the touchdesigner on. To not use one of our laptops for the festival, we borrowed a desktop PC from the MediaDock.
 
 ![PC](img/pc_01.jpg)
 
-### Visuals
+### 4.3.3. Visuals
 Since we had some visuals, the main part was connectig them together and controlling with the arduino.
 
 We had 3 diffrent visuals for 3 states: the beginning, just before reaching the goal and when the goal is reached. 2 "Cross" TOPs should blend between the visuals. 
@@ -565,18 +565,18 @@ To control the corss with arduino we took the value stream, set the limit for "n
 
 ![Arduino Controls](img/touchdesigner_05.png)
 
-### Interaction
+### 4.3.4. Interaction
 To make the interaction more understandable and responsive we added features to make it more reactive on touch and release. This way visitors knnow their touch got recognized. We wanted to add flowing:
 - quick visual effect
 - small sound effect
 - touch indicator, to know how much energie is in the current system. 
 
-#### Visual Effect
+#### 4.3.4.1. Visual Effect
 The visual effect is split is 3 parts: the trigger, the effect player and the effect itself. The trigger has a variable with a measure dealy of 0.3 seconds and a threshold of 2000. so it compares the current value with the value 0.3 seconds ago, if there is a change of more than 2000, there is a trigger signal going to the offect player. Thsis contains of a timer, a durration an a logic to prevent the player to trigger again while its running. While running its outputs a fraction between 0 and 1. The effect contains 3 circle that grow bigger, wich use the fraction as radius with a offset of 0.2 to run after echother. The circles are then used for a displace.
 
 ![Network Visual Effect](img/touchdesigner_07.png)
 
-#### Touch Indicator
+#### 4.3.4.2. Touch Indicator
 First we just added a text from 0 to 1 to indicate the touch. We simply took the normalized valuestram from the Arduino, added a lag update every 0.5 seconds, round the calues to every 0.1. In the text operator we used following expression for the text to make sure wo only display 3 characters of the value and added a string to show the goal.
 
 ```
@@ -585,10 +585,10 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 
 ![Network Touch Indicator](img/touchdesigner_06.png)
 
-### Text description
+### 4.3.5. Text description
 
-### Final Setup
+### 4.3.6. Final Setup
 
-## Presentation
+## 4.4. Presentation
 
-## Reflection
+## 4.5. Reflection
