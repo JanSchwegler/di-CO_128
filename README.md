@@ -49,8 +49,9 @@
       - [4.3.4.2. Touch Indicator](#4342-touch-indicator)
     - [4.3.5. Text description](#435-text-description)
     - [4.3.6. Final Setup](#436-final-setup)
-  - [4.4. Presentation](#44-presentation)
-  - [4.5. Reflection](#45-reflection)
+  - [4.4. Item List](#44-item-list)
+  - [4.5. Presentation](#45-presentation)
+  - [4.6. Reflection](#46-reflection)
 
 
 # 1. Touchdesigner Basics
@@ -121,12 +122,13 @@
 ## 2.2. Gyroscope (GY-87)
 [Running the gyroscope on an Arduino Uno](https://electropeak.com/learn/interfacing-gy-87-10dof-imu-mpu6050-hmc5883l-bmp085-module-with-arduino/)
 
-The provided code writes the sensor information in the "Serial Output". This can be read in Touchdesigner: 
-- Connect your Arduino to your computer via USB.
-- In TouchDesigner, add a Serial DAT node.
- Set the Port in Serial DAT to match your Arduino’s COM port (find it in Arduino IDE under Tools > Port).
-- Set the Baud Rate in Serial DAT to match your Arduino code (e.g., 9600).
-- The Serial DAT will now display the data sent from Arduino’s Serial.print() or Serial.println() commands in real time
+- Connect your Arduino to your computer via USB.  
+- In TouchDesigner, add a **Serial DAT** node.  
+- Set the **Port** in Serial DAT to match your Arduino’s COM port (you can find it in the Arduino IDE under *Tools > Port*).  
+- Set the **Baud Rate** in Serial DAT to match your Arduino code (e.g., 9600).  
+- The Serial DAT will now display the data sent from Arduino’s `Serial.print()` or `Serial.println()` commands in real time.
+
+The provided code writes the sensor information to the "Serial Output". This can be read in TouchDesigner.  
 
 **The Arduino can only be connected to one Software! So the Arduino can't keep the connection with the Arduino IDE**
 
@@ -137,9 +139,9 @@ The provided code writes the sensor information in the "Serial Output". This can
 [List with all Projects](https://gu-ma.github.io/co_128_f2501/notes/week02_day03.html)
 
 ### 3.1.1. GENMA (Genetic Manipulator)
-- Artists: Christa Sommerer and Laurent Mignonneau
-- Overview: An interactive installation where visitors can create and influence virtual creatures by sending messages.
-- Website: [https://interface.ufg.ac.at/christa-laurent/GENMA.html](https://interface.ufg.ac.at/christa-laurent/GENMA.html)
+- **Artists:** Christa Sommerer and Laurent Mignonneau
+- **Overview:** An interactive installation where visitors can create and influence virtual creatures by sending messages.
+- **Website:** [https://interface.ufg.ac.at/christa-laurent/GENMA.html](https://interface.ufg.ac.at/christa-laurent/GENMA.html)
 
 ![GENMA Box](img/genma/01_box.png)
 ![GENMA Box Inside](img/genma/02_box.png)
@@ -248,7 +250,7 @@ Ultimately, she encourages reflection on what is lost and what might be reimagin
 
 ### 4.1.1. Exhaustion
 
-In the whole class we thought about exhaustion as a topic, it's content and what we are interested in. Based on the interest of recovery, sleep and rest, Lucas, Cat, Nika and me met in a group.
+In the whole class we thought about exhaustion as a topic, it's content and what we are interested in. Based on a shared interest of recovery, sleep and rest, Lucas, Cat, Nika and me met in a group.
 
 ### 4.1.2. Early Ideas
 
@@ -271,12 +273,14 @@ Starting with ice. The more people touch the threads, the more the visual starts
 ## 4.2. Prototyping
 
 ### 4.2.1. Inspiration / Idea
-Lucas mentioned once that you could mesure the static electricity a human has. This inspired me to search for a solution with a one wire touch detection. I imagined this a bit like a 3 pin sensor. Two whires make the connection and the third controls the electricity amount. So when you touch it, it works like a [Potentiometer](https://www.google.com/search?q=Potentiometer). Joya and Thomas mentioned, it would be easy to have two whires that detect a connection. That would be an okay fix but it doesn't fit the purpose as much as a single whire. 
+Lucas once mentioned that it’s possible to measure the static electricity a human has. This inspired me to search for a solution using one-wire touch detection. I imagined it somewhat like a 3-pin sensor: two wires form the connection, and the third controls the amount of electricity. So, when you touch it, it functions like a [potentiometer](https://www.google.com/search?q=Potentiometer).
 
-I imagine to connect like 50 whires to this single one, so all of them detect touch and the amount of touch summes up. This would represent our idea of multiple people working together suitably.
+Joya and Thomas mentioned that it would be easy to use two wires to detect a connection. While that would be a workable fix, it doesn’t serve the purpose as well as a single wire.
+
+I imagine connecting around 50 wires to this single one, so that all of them detect touch, and the intensity of touch adds up. This would suitably represent our idea of multiple people working together.
 
 ### 4.2.2. Research
-Before I tried to find the right words to google my idea, I explained my vision to [Perplexity](https://www.perplexity.ai/) and asked for ideas and keywords to google. Additional to that, Perplexity gave me 2 diffrent approaches. After some chatting and researching the functionality, I went for a try on perplexity's idea.
+Before I tried to find the right words to Google my idea, I explained my vision to [Perplexity](https://www.perplexity.ai/) and asked for ideas and keywords to google. In addition to that, Perplexity gave me two different approaches. After some discussion and researching the functionality, I decided to try one of Perplexity's suggestions.
 
 [Chat with Perplexity](https://www.perplexity.ai/search/i-have-an-arduino-uno-i-want-t-TmeZzg8hTVuNVF7Y_H6DYw#0)
 
@@ -292,9 +296,10 @@ D4 (Send) ----- R1MΩ ----- D2 (Receive)
 ```
 ![Reffrence](img/arduino_touch_whireing_01.png)
 
-I got the Arduino and whired it as shown in the reference. The only problem: I had only one resistor and I couldn't read the colorcode on it. 
+I got the Arduino and wired it as shown in the reference. The only problem was that I had only one resistor, and I couldn’t read the colour code on it.
 
-After whiring I copied the code in a new Arduino sketch and loaded it to the Arduino. The [included library for the capacitive sensor i downloaded from github](https://github.com/PaulStoffregen/CapacitiveSensor).
+After wiring, I copied the code into a new Arduino sketch and uploaded it to the Arduino. The [included library for the capacitive sensor was downloaded from GitHub](https://github.com/PaulStoffregen/CapacitiveSensor).
+
 
 ``` C++
 #include <CapacitiveSensor.h>
@@ -319,36 +324,38 @@ void loop() {
 
 ![Whireing](img/arduino_touch_02.jpg)
 
-At first, I just got the values "0". Perplexity told me, that probably my resistor is too low, the heigher the better. Of course it could have other problems because it was an ai-setup and code but I know the resistor has a very heigh chance to not be suitable. To increase the static electricity, I tried touching the metal part of the table. Surprisingly it worked! I wasn't expecting this to work but now I know the setups generally works and then I played around with diffrent resistors. I found one that gave me height values when touching. An online calculator said, it's probably 2.5MΩ.
+At first, I was only getting values of "0". Perplexity suggested that my resistor was probably too low — the higher the resistance, the better. Of course, there could have been other issues, since it was an AI-generated setup and code, but I knew the resistor was very likely unsuitable.
+
+To increase the static electricity, I tried touching the metal part of the table. Surprisingly, it worked! I wasn’t expecting that, but now I know the setup works in principle. I then experimented with different resistors and found one that gave me high values when touched. An online calculator estimated it to be around 2.5 MΩ.
 
 <video controls width="600">
   <source src="img/arduino_touch_03.mp4" type="video/mp4">
 </video>
 
 ### 4.2.4. Materials & Interaction
-The next step was testing the setup with diffrent threds and fabric.
+The next step was testing the setup with different threads and fabric.
 
 ![Diffrenct Conductive Threds](img/arduino_threds_01.jpg)
 ![Conductive Fabric](img/arduino_fabric_01.jpg)
 
-You probably can't see but here we hung some diffrent threds and whires and connected them all together wo the arduino. 
+You probably can’t see it, but here we hung some different threads and wires and connected them all together to the Arduino.
 
 ![Threds_02](img/arduino_threds_02.jpg)
 
-No matter what and how many you touch, it's ready the amount of electricity touching the whires. It was hard so setup for every single thread to have a stable connection. So sometime we got stable and reliable results and other times we didn't.
+No matter how many or which ones you touch, it reads the amount of electricity touching the wires. It was difficult to set up a stable connection for every single thread, so sometimes we got stable and reliable results, and other times we didn’t.
 
 #### 4.2.4.1. Crystals
-
-As we thougth about water and ice, transparent crystals came up as visualisation of ice. So we tried growing crystals on a wooden branch.
+As we thought about water and ice, transparent crystals came to mind as a visualisation of ice. So, we tried growing crystals on a wooden branch.
 
 ![Crystals](img/crystal_01.jpg)
 
-This worked well. Due to the ratio to be a bit off, the crystels grew to big. We would rather have smaller crystals.
+This worked well. However, due to the ratio being slightly off, the crystals grew too large. We would prefer smaller crystals.
 
-Later we also tought about the interaction-point needs to be inviting to touch. Crystals look nice and people might like to give it a little touch but not a firm grip. That's not beneficial for our installation.
+Later, we also considered that the interaction point needs to be inviting to touch. Crystals look nice, and people might like to give them a gentle touch but not a firm grip, which wouldn’t be beneficial for our installation.
 
 ### 4.2.5. Multi Touch Sensor
-There was a diffrent sensor to try, one that can read diffrent touches at the same time. The downside, the output date should only be 0 or 1, so touch or no touch. First, we had to solder the conncetors to the sensor.
+There was a different sensor to try, one that can read multiple touches at the same time. The downside is that the output data is binary: 0 or 1, meaning touch or no touch. First, we had to solder the connectors to the sensor.
+
 
 ![Multi Touch Sensor](img/arduino_sensor_01.jpg)
 
@@ -360,9 +367,9 @@ Due to the library not working properly, we went for the [library from adafruit]
 
 ![Whireing and texting](img/multi_touch_sensor_01.jpg)
 
-There was a big problem using the sensor. Pin 2 & 10 are constantly beeing read as touched. Additionally of loosing those 2 pins, the pins 4 - 11 (except of pin 10) did not react at all. only Pin 0, 1 and 3 work properly.
+There was a major problem using the sensor. Pins 2 and 10 were constantly being read as touched. In addition to losing those two pins, pins 4 to 11 (except for pin 10) did not respond at all. Only pins 0, 1, and 3 worked properly.
 
-I tested the example code from the Library.
+I tested the example code from the library.
 
 ![Code Example Adafruit](img/multi_touch_sensor_03.png)
 
@@ -439,7 +446,7 @@ void loop() {
 }
 ```
 
-Further, I tested a Code provided from perplexity. (it linked following websites as source: [Website 1](https://38-3d.co.uk/de/blogs/blog/so-verwenden-sie-den-kapazitiven-touch-sensor-mpr121-mit-arduino) / [Website 2](https://www.circuits-diy.com/interfacing-mpr121-capacitive-touch-sensor-module-with-arduino/))
+Further, I tested a Code provided from Perplexity. (It linked following websites as source: [Website 1](https://38-3d.co.uk/de/blogs/blog/so-verwenden-sie-den-kapazitiven-touch-sensor-mpr121-mit-arduino) / [Website 2](https://www.circuits-diy.com/interfacing-mpr121-capacitive-touch-sensor-module-with-arduino/))
 
 ``` C++
 #include <Wire.h>
@@ -472,23 +479,24 @@ void loop() {
 ```
 
 ### 4.2.6. TouchDesinger
-The Arduino writes the detected values in the serial output. This can be read in TouchDesigner with the "Serial" DAT Operator. The input needs to be converted in numbers and rescaled to be used properly. In the example, the number gets divided by 1000, so we get smaller values and added by 0 to have values greater than 1. So the touch input is used to modify a noise texture.
+
+The Arduino writes the detected values to the serial output. This can be read in TouchDesigner using the **Serial DAT** operator. The input needs to be converted into numbers and rescaled to be used properly. In the example, the numbers are divided by 1000 to produce smaller values and then added to 0 to ensure values remain greater than 1. The touch input is used to modify a noise texture.
 
 ![alt text](img/touchdesigner_01.png)
 
 #### 4.2.6.1. Voronoi
-To have a basic water top visual, you can do it by just adding a voronoi texture and tweek the settings. TouchDesigner doesn't come with voronoi so we tried to imitate this texture.
+To create a basic water drop visual, you can simply add a Voronoi texture and tweak the settings. TouchDesigner doesn’t include a Voronoi texture by default, so we tried to imitate this texture.
 
 ![Voronoi Visual](img/voronoi_01.png)
 
 ![Voronoi Network](img/voronoi_02.png)
 
-This voronoi setup is noise and feedback based. Thats a problem because its almost impossible to change the movement, especially the speed. Its a nice visual but not adaptable.
+This Voronoi setup is noise- and feedback-based. That’s a problem because it’s almost impossible to control the movement, especially the speed. It’s a nice visual, but not very adaptable.
 
 #### 4.2.6.2. Ice
-We want water as the entitiy and visual to change based on parameters of Arduino. We thought of having it icy at first, then it changes to more liquid state and maybe also have some bubbles later on. 
+We want water as the entity and visual to change based on parameters from the Arduino. We initially imagined it being icy, then gradually changing to a more liquid state, and perhaps adding some bubbles later on.
 
-First we started with just the more static icy like part. It's a network with edges and feedbackloops.
+First, we started with just the more static, icy-like part. It’s a network with edges and feedback loops.
 
 ![alt text](img/visuals/NetworkIce.png)
 ![alt text](img/visuals/Ice_v1.png)
@@ -589,6 +597,32 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 
 ### 4.3.6. Final Setup
 
-## 4.4. Presentation
+## 4.4. Item List
 
-## 4.5. Reflection
+| Nr  | Item                                         | Source                              | State           |
+| --- | -------------------------------------------- | ----------------------------------- | --------------- |
+| 1   | Conductive Fabric                            | DI CO "Spielst du mit?"             | ✅ Zurückgegeben |
+| 1   | Conductive Thred                             | DI CO "Spielst du mit?"             | ✅ Zurückgegeben |
+| 2   | Hardware intoduction Arduino                 | Thomas / Media Dock                 | ✅ Zurückgegeben |
+| 3   | Arduino, Board, Resistor, USB Kabel          | Thomas / Media Dock                 | ▶️ Ausgeliehen   |
+| 4   | PC Beck                                      | Media Dock offiziell duch Ausleihe  | ▶️ Ausgeliehen   |
+| 5   | 2x Steckerleisten (Hausdienst, Schwarz)      | DI Raum 4. Stock                    | ▶️ Ausgeliehen   |
+| 6   | Monitor (DIV57) inkl. Strom- und HDMI-Kabel  | DI Raum Erdgeschoss durch Guillaume | ▶️ Ausgeliehen   |
+| 7   | Tastatur (DI7654)                            | DI Raum Erdgeschoss durch Guillaume | ▶️ Ausgeliehen   |
+| 8   | Beamer                                       | Ausleihe offiziell                  | ▶️ Ausgeliehen   |
+| 9   | HDMI Kabel für Beamer                        | Ausleihe offiziell                  | ▶️ Ausgeliehen   |
+| 10  | Grünes LAN Kabel                             | Media Dock                          | ▶️ Ausgeliehen   |
+| 11  | PC Stromkabel                                | Ausleihe (inoffiziell)              | ▶️ Ausgeliehen   |
+| 12  | 8 Kopfhörer (inkl. Adapter auf 3.5mm Klinke) | Ausleihe                            | ▶️ Ausgeliehen   |
+| 13  | 2 Audio Splitter                             | Ausleihe                            | ▶️ Ausgeliehen   |
+| 14  | X                                            | X                                   | X               |
+| 15  | X                                            | X                                   | X               |
+| 16  | X                                            | X                                   | X               |
+| 17  | X                                            | X                                   | X               |
+| 18  | X                                            | X                                   | X               |
+| 19  | X                                            | X                                   | X               |
+| 20  | X                                            | X                                   | X               |
+
+## 4.5. Presentation
+
+## 4.6. Reflection
