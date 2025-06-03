@@ -499,20 +499,24 @@ We want water as the entity and visual to change based on parameters from the Ar
 
 First, we started with just the more static, icy-like part. It’s a network with edges and feedback loops.
 
-![alt text](img/visuals/NetworkIce.png)
-![alt text](img/visuals/Ice_v1.png)
+![Ice Network](img/visuals/NetworkIce.png)
+![Ice Visual v1](img/visuals/Ice_v1.png)
 
 We thought it could be a possibility to just substract the effects for our projects and leave the background blank or in one color so the Arduino input has an easier time. 
 
-![alt text](img/visuals/Onlyeffect.png)
+![Ice Visual v1 only texture](img/visuals/Onlyeffect.png)
 
 Then we made another network which was similar but for the water visual. 
 
-![alt text](img/visuals/WaterStateMedium.png)
+![Water Visual](img/visuals/WaterStateMedium.png)
 
-We then thought it would make more sense to have the same network and then let Arduino tweak some paramters in it. So we made based on the water visual and ice visual again but tweaked the paramters and left it the same otherwise.
+We then thought it would make more sense to have the same network and then let Arduino tweak some parameters in it. So we made based on the water visual and ice visual again but tweaked the paramters and left it the same otherwise.
 
-![alt text](img/visuals/IceStateFirst.png)
+![Ice Visual v2](img/visuals/IceStateFirst.png)
+
+We needed another state of the visual which would represent the final state. It's the same network with some added rgb and bloom to enhance the effect, sped up and changed the color to a deeper blue. 
+
+![Final State Water Visual](img/visuals/FinalStateWater.png)
 
 Lastly we made a final state which would be shown when all the wired would get touched.
 
@@ -555,6 +559,8 @@ We couldn't find good balance and think its almost impossible to have the light 
 ## 4.3. Production
 
 ### 4.3.1. Wooden Branch
+
+![Hanging the branch](/img/HangingTheBranch.jpeg)
 
 ### 4.3.2. Hardware
 We have most of our important hardware from the prototyping. The most important for us is a beamer, the arduino and a PC to run the touchdesigner on. To not use one of our laptops for the festival, we borrowed a desktop PC from the MediaDock.
