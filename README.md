@@ -265,11 +265,17 @@ Later Joya joind our group and was intereted in doing a physical interaction. So
 
 ### 4.1.3. Concept & Story
 
-TBD
-Several conductive threads/ropes hang in width and length on a tree branch. These interact with the visual when touched. While it needs several people to touch it so the visual fully blooms up, there are in-between states as well to symbolise that something happens.
+We gave the project the name "icebreaker", because the visuals start with ice and the installation brings starangers together. 
 
-Visual:
-Starting with ice. The more people touch the threads, the more the visual starts to "crack" and bubble and warm up. If all of the threads are touched, the visual is at it's peak.
+There is a small notice next to the installation in case people are too afraid to interact with the project.
+
+![Notice](img/Notice.jpeg)
+
+Several conductive threads hang in length on a tree branch. These interact with the visual when touched. While it needs several people to touch it so the visual fully blooms up, there are in-between states as well to symbolise that something is happening.
+
+The idea is that the topic "exhaustion" is shown through the visuals. It is starting with ice. The more people touch the threads, the more the visual starts to "crack" and bubble and warm up. If all of the threads are touched, the visual is at it's peak. This is also shown by an indicator. (TBD)
+
+The concept of the project is "together resisting exhaustion". The collaboration happens at the threads. The goal is to bring people together and by that share and reduce some exhaustion from an abstract entitiy, as everyone is taking a little part of it (by holding a thread). The focus is more on actively participating (rather than getting consumed by exhaustion) and to care for each other.
 
 ## 4.2. Prototyping
 
@@ -634,6 +640,12 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 soat2022
 ## 4.5. Presentation
 
+The presentation went smoothly. People were fascinated by how the installation works despite not seeing any cables or wiring. Also, the project structure in Touchdesigner was complimented on. 
+
+The most critiqued thing was the threads still too delicate and not inviting to be touched. 
+
+People also had fun taking off their shoes and triggering the max values in the visual.
+
 ## 4.6. Reflection
 
 # ToDo
@@ -641,3 +653,4 @@ soat2022
 - Spotlights
 - Goal Indicator
 - PC Setup
+- finalising docu & Abgabe
