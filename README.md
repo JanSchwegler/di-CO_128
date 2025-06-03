@@ -52,6 +52,7 @@
   - [4.4. Item List](#44-item-list)
   - [4.5. Presentation](#45-presentation)
   - [4.6. Reflection](#46-reflection)
+- [ToDo](#todo)
 
 
 # 1. Touchdesigner Basics
@@ -628,3 +629,9 @@ soat2022
 ## 4.5. Presentation
 
 ## 4.6. Reflection
+
+# ToDo
+- Audio
+- Spotlights
+- Goal Indicator
+- PC Setup
