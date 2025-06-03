@@ -605,7 +605,7 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 | 1   | Conductive Thred                             | DI CO "Spielst du mit?"             | ✅ Zurückgegeben |
 | 2   | Hardware intoduction Arduino                 | Thomas / Media Dock                 | ✅ Zurückgegeben |
 | 3   | Arduino, Board, Resistor, USB Kabel          | Thomas / Media Dock                 | ▶️ Ausgeliehen   |
-| 4   | PC Beck                                      | Media Dock offiziell duch Ausleihe  | ▶️ Ausgeliehen   |
+| 4   | PC Beck                                      | Media Dock offiziell duch Ausleihe  | ✅ Zurückgegeben |
 | 5   | 2x Steckerleisten (Hausdienst, Schwarz)      | DI Raum 4. Stock                    | ▶️ Ausgeliehen   |
 | 6   | Monitor (DIV57) inkl. Strom- und HDMI-Kabel  | DI Raum Erdgeschoss durch Guillaume | ▶️ Ausgeliehen   |
 | 7   | Tastatur (DI7654)                            | DI Raum Erdgeschoss durch Guillaume | ▶️ Ausgeliehen   |
@@ -615,7 +615,7 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 | 11  | PC Stromkabel                                | Ausleihe (inoffiziell)              | ▶️ Ausgeliehen   |
 | 12  | 8 Kopfhörer (inkl. Adapter auf 3.5mm Klinke) | Ausleihe                            | ▶️ Ausgeliehen   |
 | 13  | 2 Audio Splitter                             | Ausleihe                            | ▶️ Ausgeliehen   |
-| 14  | X                                            | X                                   | X               |
+| 14  | MAC Mini M1 (soat2022)                       | Thomas / Media Dock                 | ▶️ Ausgeliehen   |
 | 15  | X                                            | X                                   | X               |
 | 16  | X                                            | X                                   | X               |
 | 17  | X                                            | X                                   | X               |
@@ -623,6 +623,8 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 | 19  | X                                            | X                                   | X               |
 | 20  | X                                            | X                                   | X               |
 
+
+soat2022
 ## 4.5. Presentation
 
 ## 4.6. Reflection
