@@ -612,7 +612,7 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 | 7   | Tastatur (DI7654)                            | DI Raum Erdgeschoss durch Guillaume | ▶️ Ausgeliehen   |
 | 8   | Beamer                                       | Ausleihe offiziell                  | ▶️ Ausgeliehen   |
 | 9   | HDMI Kabel für Beamer                        | Ausleihe offiziell                  | ▶️ Ausgeliehen   |
-| 10  | Grünes LAN Kabel                             | Media Dock                          | ▶️ Ausgeliehen   |
+| 10  | Grünes LAN Kabel                             | Media Dock                          | ✅ Zurückgegeben |
 | 11  | PC Stromkabel                                | Ausleihe (inoffiziell)              | ▶️ Ausgeliehen   |
 | 12  | 8 Kopfhörer (inkl. Adapter auf 3.5mm Klinke) | Ausleihe                            | ▶️ Ausgeliehen   |
 | 13  | 2 Audio Splitter                             | Ausleihe                            | ▶️ Ausgeliehen   |
