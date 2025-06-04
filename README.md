@@ -636,7 +636,7 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 | 19  | X                                            | X                                   | X               |
 | 20  | X                                            | X                                   | X               |
 
-
+https://www.perplexity.ai/search/i-wanna-change-the-pitch-in-au-VEXmnUQ_SMq9Z_aOPQBT1w
 soat2022
 ## 4.5. Presentation
 
