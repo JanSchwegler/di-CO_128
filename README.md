@@ -250,44 +250,41 @@ Ultimately, she encourages reflection on what is lost and what might be reimagin
 ## 4.1. Concept
 
 ### 4.1.1. Exhaustion
-
-In the whole class we thought about exhaustion as a topic, it's content and what we are interested in. Based on a shared interest of recovery, sleep and rest, Lucas, Cat, Nika and me met in a group.
+As a class, we explored the topic of exhaustion—its content and what aspects interested us most. Based on a shared interest in recovery, sleep, and rest, Lucas, Cat, Nika, and I formed a group.
 
 ### 4.1.2. Early Ideas
+In our group of four, we each considered different ideas and aspects. We knew we would need to split up, so we discussed our interests in more detail. Two groups formed: Lucas and Cat, and Nika and me. While Lucas and Cat were more interested in the state of lying down, rest, and sleep, Nika and I focused on working together and caring for an entity, perhaps with an element of play.
 
-In the goup of four we individually thought about diffrent ideas and aspects. We knew we have to split up, so we came together and talked more about our intrests. Then, 2 Groups formd: Lucas and Cat / Nika and me. While Lucas and Cat were more intrested in the state of lying down and rest / sleep, Nika and I thought more about working together and caring for an entitiy, maybe also some part of play.
+We then developed our concept around the narrative of working together to resist exhaustion. As a working claim, we called it "Together resisting exhaustion." We wanted an installation that would bring strangers together to work toward a shared goal. When visiting, it should be clear that one person alone cannot achieve the goal, or at least it would be very difficult. This should encourage people to ask for help and come together.
 
-Later we worked out our concept around the narrative of working together to resist the exhaustion. We named that as a working clame "Together resisting exhaustion". We wanted an installation to bring strangers together to work for a given goal. At the visit it should be clear that one person can't achieve the goal alone or it's really hard. So the people should realise to ask for help and come together. 
+Our initial concept featured a plant as the main entity around which the interaction was set up. We liked the idea of people acting as energy sources, transferring their energy to the entity. People would touch the plant, and as more people participated, the plant would come to life.
 
-We worked out a concept where we have a plant as the main entity the whole interaction was set up around. We liked the idea of having people as energy and detect peoples energy and bring them to the entity. People would touch a plant and as the people count goes up the plant starts living up.
-
-Later Joya joind our group and was intereted in doing a physical interaction. So we rethought our interactionpoint. With that we also adapted our concept and visualization while keeping the main narrative of bringing people together and achieve a heigher goal in a groupe than alone.
+Later, Joya joined our group and was interested in creating a physical interaction. We rethought our interaction point and adapted our concept and visualisation, while keeping the main narrative of bringing people together to achieve a higher goal as a group rather than alone.
 
 ### 4.1.3. Concept & Story
-
 We gave the project the name "icebreaker", because the visuals start with ice and the installation brings starangers together. 
 
 There is a small notice next to the installation in case people are too afraid to interact with the project.
 
 ![Notice](img/Notice.jpeg)
 
-Several conductive threads hang in length on a tree branch. These interact with the visual when touched. While it needs several people to touch it so the visual fully blooms up, there are in-between states as well to symbolise that something is happening.
+Several conductive threads hang from a tree branch. These interact with the visual when touched. While it takes several people touching the threads for the visual to fully bloom, there are also in-between states to show that something is happening.
 
-The idea is that the topic "exhaustion" is shown through the visuals. It is starting with ice. The more people touch the threads, the more the visual starts to "crack" and bubble and warm up. If all of the threads are touched, the visual is at it's peak. This is also shown by an indicator. (TBD)
+The idea is to represent the topic of "exhaustion" through the visuals. It starts with ice. The more people touch the threads, the more the visual begins to "crack," bubble, and warm up. If all the threads are touched, the visual reaches its peak.
 
-The concept of the project is "together resisting exhaustion". The collaboration happens at the threads. The goal is to bring people together and by that share and reduce some exhaustion from an abstract entitiy, as everyone is taking a little part of it (by holding a thread). The focus is more on actively participating (rather than getting consumed by exhaustion) and to care for each other.
+The concept of the project is "together resisting exhaustion." Collaboration happens at the threads. The goal is to bring people together and, by doing so, share and reduce some exhaustion from an abstract entity, as everyone takes a little part of it (by holding a thread). The focus is on actively participating (rather than being consumed by exhaustion) and caring for each other.
 
 ## 4.2. Prototyping
 
 ### 4.2.1. Inspiration / Idea
-Lucas once mentioned that it’s possible to measure the static electricity a human has. This inspired me to search for a solution using one-wire touch detection. I imagined it somewhat like a 3-pin sensor: two wires form the connection, and the third controls the amount of electricity. So, when you touch it, it functions like a [potentiometer](https://www.google.com/search?q=Potentiometer).
+Lucas, a classmate, once mentioned that it’s possible to measure the static electricity a human has. This inspired me to search for a solution using one-wire touch detection. I imagined it somewhat like a 3-pin sensor: two wires form the connection, and the third controls the amount of electricity. So, when you touch it, it functions like a [potentiometer](https://www.google.com/search?q=Potentiometer).
 
 Joya and Thomas mentioned that it would be easy to use two wires to detect a connection. While that would be a workable fix, it doesn’t serve the purpose as well as a single wire.
 
-I imagine connecting around 50 wires to this single one, so that all of them detect touch, and the intensity of touch adds up. This would suitably represent our idea of multiple people working together.
+I imagined connecting around 50 wires to this single one, so that all of them detect touch, and the intensity of touch adds up. This would suitably represent our idea of multiple people working together.
 
 ### 4.2.2. Research
-Before I tried to find the right words to Google my idea, I explained my vision to [Perplexity](https://www.perplexity.ai/) and asked for ideas and keywords to google. In addition to that, Perplexity gave me two different approaches. After some discussion and researching the functionality, I decided to try one of Perplexity's suggestions.
+Before we tried to find the right words to Google my idea, I explained my vision to [Perplexity](https://www.perplexity.ai/) and asked for ideas and keywords to google. In addition to that, Perplexity gave me two different approaches. After some discussion and researching the functionality, I decided to try one of Perplexity's suggestions.
 
 [Chat with Perplexity](https://www.perplexity.ai/search/i-have-an-arduino-uno-i-want-t-TmeZzg8hTVuNVF7Y_H6DYw#0)
 
@@ -303,9 +300,9 @@ D4 (Send) ----- R1MΩ ----- D2 (Receive)
 ```
 ![Reffrence](img/arduino_touch_whireing_01.png)
 
-I got the Arduino and wired it as shown in the reference. The only problem was that I had only one resistor, and I couldn’t read the colour code on it.
+We got the Arduino and wired it as shown in the reference. The only problem was that we had only one resistor, and we couldn’t read the colour code on it.
 
-After wiring, I copied the code into a new Arduino sketch and uploaded it to the Arduino. The [included library for the capacitive sensor was downloaded from GitHub](https://github.com/PaulStoffregen/CapacitiveSensor).
+After wiring, we copied the code into a new Arduino sketch and uploaded it to the Arduino. The [included library for the capacitive sensor was downloaded from GitHub](https://github.com/PaulStoffregen/CapacitiveSensor).
 
 
 ``` C++
@@ -329,18 +326,18 @@ void loop() {
 
 ![Reffrence](img/arduino_touch_01.png)
 
-![Whireing](img/arduino_touch_02.jpg)
+![Whiring](img/arduino_touch_02.jpg)
 
-At first, I was only getting values of "0". Perplexity suggested that my resistor was probably too low — the higher the resistance, the better. Of course, there could have been other issues, since it was an AI-generated setup and code, but I knew the resistor was very likely unsuitable.
+At first, we were only getting values of "0". Perplexity suggested that the resistor was probably too low — the higher the resistance, the better. Of course, there could have been other issues, since it was an AI-generated setup and code, but we knew the resistor was very likely unsuitable.
 
-To increase the static electricity, I tried touching the metal part of the table. Surprisingly, it worked! I wasn’t expecting that, but now I know the setup works in principle. I then experimented with different resistors and found one that gave me high values when touched. An online calculator estimated it to be around 2.5 MΩ.
+To increase the static electricity, we tried touching the metal part of the table. Surprisingly, it worked! We weren’t expecting that, but now we knew the setup works in principle. We then experimented with different resistors and found one that gave us high values when touched. An online calculator estimated it to be around 2.5 MΩ.
 
 <video controls width="600">
   <source src="img/arduino_touch_03.mp4" type="video/mp4">
 </video>
 
 ### 4.2.4. Materials & Interaction
-The next step was testing the setup with different threads and fabric.
+The next step was testing the setup with different threads and fabrics.
 
 ![Diffrenct Conductive Threds](img/arduino_threds_01.jpg)
 ![Conductive Fabric](img/arduino_fabric_01.jpg)
@@ -356,27 +353,26 @@ As we thought about water and ice, transparent crystals came to mind as a visual
 
 ![Crystals](img/crystal_01.jpg)
 
-This worked well. However, due to the ratio being slightly off, the crystals grew too large. We would prefer smaller crystals.
+This worked well. However, due to the ratio being slightly off, the crystals grew too large. We would have preferred smaller crystals.
 
-Later, we also considered that the interaction point needs to be inviting to touch. Crystals look nice, and people might like to give them a gentle touch but not a firm grip, which wouldn’t be beneficial for our installation.
+Later, we also considered that the interaction point needs to be inviting to touch. Crystals look nice, and people might want to give them a gentle touch, but not a firm grip—which wouldn’t be ideal for our installation.
 
 ### 4.2.5. Multi Touch Sensor
-There was a different sensor to try, one that can read multiple touches at the same time. The downside is that the output data is binary: 0 or 1, meaning touch or no touch. First, we had to solder the connectors to the sensor.
-
+We wanted to try a different sensor, one that can read multiple touches at the same time. The downside is that the output data is binary: 0 or 1, meaning touch or no touch. First, we had to solder the connectors to the sensor.
 
 ![Multi Touch Sensor](img/arduino_sensor_01.jpg)
 
-For the connection we used first the whireing from [this Website](https://learn.sparkfun.com/tutorials/mpr121-hookup-guide/all).
+For the connection, we first used the wiring from [this Website](https://learn.sparkfun.com/tutorials/mpr121-hookup-guide/all).
 
-![Multi Touch Sensor Whireing](img/multi_touch_sensor_02.jpg)
+![Multi Touch Sensor Whiring](img/multi_touch_sensor_02.jpg)
 
-Due to the library not working properly, we went for the [library from adafruit](https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/wiring) included in the Arduino IDE.
+Since the library didn’t work properly, we switched to the [library from adafruit](https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/wiring) included in the Arduino IDE.
 
-![Whireing and texting](img/multi_touch_sensor_01.jpg)
+![Whiring and texting](img/multi_touch_sensor_01.jpg)
 
-There was a major problem using the sensor. Pins 2 and 10 were constantly being read as touched. In addition to losing those two pins, pins 4 to 11 (except for pin 10) did not respond at all. Only pins 0, 1, and 3 worked properly.
+There was a major problem using the sensor: pins 2 and 10 were constantly being read as touched. In addition to losing those two pins, pins 4 to 11 (except for pin 10) did not respond at all. Only pins 0, 1, and 3 worked properly.
 
-I tested the example code from the library.
+We tested the example code from the library.
 
 ![Code Example Adafruit](img/multi_touch_sensor_03.png)
 
@@ -453,7 +449,7 @@ void loop() {
 }
 ```
 
-Further, I tested a Code provided from Perplexity. (It linked following websites as source: [Website 1](https://38-3d.co.uk/de/blogs/blog/so-verwenden-sie-den-kapazitiven-touch-sensor-mpr121-mit-arduino) / [Website 2](https://www.circuits-diy.com/interfacing-mpr121-capacitive-touch-sensor-module-with-arduino/))
+Further, we tested the code provided from Perplexity. (It linked following websites as used sources: [Website 1](https://38-3d.co.uk/de/blogs/blog/so-verwenden-sie-den-kapazitiven-touch-sensor-mpr121-mit-arduino) / [Website 2](https://www.circuits-diy.com/interfacing-mpr121-capacitive-touch-sensor-module-with-arduino/))
 
 ``` C++
 #include <Wire.h>
@@ -486,49 +482,48 @@ void loop() {
 ```
 
 ### 4.2.6. TouchDesinger
-
-The Arduino writes the detected values to the serial output. This can be read in TouchDesigner using the **Serial DAT** operator. The input needs to be converted into numbers and rescaled to be used properly. In the example, the numbers are divided by 1000 to produce smaller values and then added to 0 to ensure values remain greater than 1. The touch input is used to modify a noise texture.
+The Arduino writes the detected values to the serial output. This can be read in TouchDesigner using the **Serial DAT** operator. The input needs to be converted into numbers and rescaled to be used properly. In the example, the numbers are divided by 1000 to produce smaller values and then offset to ensure values remain above 1. The touch input is used to modify a noise texture.
 
 ![alt text](img/touchdesigner_01.png)
 
 #### 4.2.6.1. Voronoi
-To create a basic water drop visual, you can simply add a Voronoi texture and tweak the settings. TouchDesigner doesn’t include a Voronoi texture by default, so we tried to imitate this texture.
+To create a basic water drop visual, you can simply add a Voronoi texture and tweak the settings. TouchDesigner doesn’t include a Voronoi texture by default, so we tried to imitate this effect.
 
 ![Voronoi Visual](img/voronoi_01.png)
 
 ![Voronoi Network](img/voronoi_02.png)
 
-This Voronoi setup is noise- and feedback-based. That’s a problem because it’s almost impossible to control the movement, especially the speed. It’s a nice visual, but not very adaptable.
+This Voronoi setup is based on noise and feedback. The main issue is that it’s almost impossible to control the movement, especially the speed. While it creates a nice visual, it is not very adaptable.
 
 #### 4.2.6.2. Ice
-We want water as the entity and visual to change based on parameters from the Arduino. We initially imagined it being icy, then gradually changing to a more liquid state, and perhaps adding some bubbles later on.
+We wanted water as the main entity, with the visual changing based on parameters from the Arduino. Initially, we imagined it being icy, then gradually transitioning to a more liquid state, perhaps with some bubbles added later.
 
-First, we started with just the more static, icy-like part. It’s a network with edges and feedback loops.
+First, we started with the more static, icy-like part. It’s a network with edges and feedback loops.
 
 ![Ice Network](img/visuals/NetworkIce.png)
 ![Ice Visual v1](img/visuals/Ice_v1.png)
 
-We thought it could be a possibility to just substract the effects for our projects and leave the background blank or in one color so the Arduino input has an easier time. 
+We thought it could be a possibility to just subtract the effects for our project and leave the background blank or in a single color so the Arduino input would have an easier time.
 
 ![Ice Visual v1 only texture](img/visuals/Onlyeffect.png)
 
-Then we made another network which was similar but for the water visual. 
+Then we created another network, which was similar but designed for the water visual.
 
 ![Water Visual](img/visuals/WaterStateMedium.png)
 
-We then thought it would make more sense to have the same network and then let Arduino tweak some parameters in it. So we made based on the water visual and ice visual again but tweaked the paramters and left it the same otherwise.
+We then realized it would make more sense to use the same network and let the Arduino tweak some parameters. So, we based it on the water and ice visuals again but adjusted the parameters while keeping the structure the same.
 
 ![Ice Visual v2](img/visuals/IceStateFirst.png)
 
-We needed another state of the visual which would represent the final state. It's the same network with some added rgb and bloom to enhance the effect, sped up and changed the color to a deeper blue. 
+We needed another state of the visual to represent the final stage. It's the same network, but with added RGB and bloom to enhance the effect, increased speed, and a deeper blue color. Also, we added another feedback loop to make it more dynamic and bubbly.
 
 ![Final State Water Visual](img/visuals/FinalStateWater.png)
 
-Lastly we made a final state which would be shown when all the wired would get touched.
+Finally, we created a final state that would be shown when all the wires are touched.
 
 ### 4.2.7. Installation
 
-To test the installation and interaction we connected the diffrent parts. We put the frame to test the diffrent whires infront od the beamer and connceted it through the arduino and touchdesigner to the beamer. 
+To test the installation and interaction we connected the different parts. We put the frame to test the different wires in front of the beamer and connected it through the Arduino and TouchDesigner to the beamer.
 
 ![Installation](img/installation_01.jpg)
 
@@ -539,28 +534,27 @@ to make the ineraction work, we just remaped the values accordingly so, when noo
 ![Interaction](img/installation_02.jpg)
 
 ### 4.2.8. Beamer Setup
-
-We wanted to test diffrent lighting. We thougt that the big beamer can steal the show from our physical interactionpoint. We have to palance this weight and maybe give our Interactionpoint some light. We also thought about having our visual on the interaction point. But we do rather not have any showdow on our beamer visuals and would like to have them visibel. that could be hard when we have the visuals on the physical strings. To not have the beamer laser peoples eyes, we tried to have indirect light from the beamer to the strings. If we can balance the light, we would have the visuals on a mobile wall that probalby out of fabric on one side the beamer and on the other side the visitors and the interactionpoint.
+We wanted to test different lighting setups. We thought that the large beamer might overshadow our physical interaction point. We needed to balance this and perhaps provide some lighting for the interaction point itself. We also considered projecting our visual directly onto the interaction point. However, we preferred not to have any shadows on our beamer visuals and wanted them to remain clearly visible. This could be challenging if the visuals were projected onto the physical strings. To avoid the beamer shining directly into visitors' eyes, we tried to use indirect light from the beamer onto the strings. If we could balance the lighting, we envisioned having the visuals on a mobile wall—probably made of fabric—with the beamer on one side and the visitors and interaction point on the other.
 
 ``` markdown
 Interactionpoint    |   Fabic Wall    |   Beamer
 ```
 
-So we tested the beamer on Fabric
+So we tested the beamer on fabric.
 
 ![Beamer on Fabric Projection](img/beamer_fabric_test_01.jpg)
 
-This works pretty well!
+This worked pretty well!
 
 ![Light passig through](img/beamer_fabric_test_02.jpg)
 
-The big problem, there is no light passing through the fabric. That makes the purpose of the beamer towords the strings invalide. But we still have to test diffrent fabric and the smaller frame could still be beneficial later.
+The main problem was that no light passed through the fabric. This made the purpose of projecting the beamer onto the strings invalid. However, we still needed to test different fabrics, and the smaller frame could still be useful later.
 
-We further tried with diffrend fabric and diffrend density.
+We further experimented with different fabrics and densities.
 
 ![Fabric Testing](img/beamer_fabric_test_03.jpg)
 
-We couldn't find good balance and think its almost impossible to have the light shining through without blinding the visitors and keeping the visuals on the fabric. Even a very thin fabric let almost no light throug but it was uncomftable looking at it because of the strong light.
+We couldn't find a good balance and think it's almost impossible to have the light shine through without blinding the visitors or losing the visuals on the fabric. Even a very thin fabric let almost no light through, and it was uncomfortable to look at because of the strong light.
 
 ## 4.3. Production
 
@@ -569,36 +563,36 @@ We couldn't find good balance and think its almost impossible to have the light 
 ![Hanging the branch](/img/HangingTheBranch.jpeg)
 
 ### 4.3.2. Hardware
-We have most of our important hardware from the prototyping. The most important for us is a beamer, the arduino and a PC to run the touchdesigner on. To not use one of our laptops for the festival, we borrowed a desktop PC from the MediaDock.
+We had most of our important hardware from prototyping. The most essential items were the beamer, the Arduino, and a PC to run TouchDesigner. To avoid using one of our laptops for the festival, we borrowed a desktop PC from the MediaDock.
 
 ![PC](img/pc_01.jpg)
 
 ### 4.3.3. Visuals
-Since we had some visuals, the main part was connectig them together and controlling with the arduino.
+Since we already had some visuals, the main task was connecting them and controlling them with the Arduino.
 
-We had 3 diffrent visuals for 3 states: the beginning, just before reaching the goal and when the goal is reached. 2 "Cross" TOPs should blend between the visuals. 
+We have three different visuals for three states: the beginning, just before reaching the goal, and when the goal is reached. Two "Cross" TOPs were used to blend between the visuals.
 
-Because we had a value from 0 to 1 for the blending, we had to split that into 0 - 0.5 and 0.5 - 1. Those values had to be remaped to 0 - 1 to work with the Cross.
+Because we had a value from 0 to 1 for the blending, we had to split that into 0–0.5 and 0.5–1. These values then had to be remapped to 0–1 to work with the Cross TOP.
 
 ![Blend Visuals](img/touchdesigner_04.png)
 
-To control the corss with arduino we took the value stream, set the limit for "no touch" and "goal is reached", remaped the values from 0 - 1 and added a filter to smooth out the stream and avoid strong jumping. 
+To control the Cross TOP with Arduino, we took the value stream, set limits for "no touch" and "goal is reached," remapped the values from 0–1, and added a filter to smooth out the stream and avoid abrupt jumps.
 
 ![Arduino Controls](img/touchdesigner_05.png)
 
 ### 4.3.4. Interaction
-To make the interaction more understandable and responsive we added features to make it more reactive on touch and release. This way visitors knnow their touch got recognized. We wanted to add flowing:
-- quick visual effect
-- small sound effect
-- touch indicator, to know how much energie is in the current system. 
+To make the interaction more understandable and responsive, we added features to make it more reactive to touch and release. This way, visitors knew their touch was recognized. We wanted to add the following:
+- Quick visual effect
+- Small sound effect
+- Touch indicator, to show how much energy is currently in the system
 
 #### 4.3.4.1. Visual Effect
-The visual effect is split is 3 parts: the trigger, the effect player and the effect itself. The trigger has a variable with a measure dealy of 0.3 seconds and a threshold of 2000. so it compares the current value with the value 0.3 seconds ago, if there is a change of more than 2000, there is a trigger signal going to the offect player. Thsis contains of a timer, a durration an a logic to prevent the player to trigger again while its running. While running its outputs a fraction between 0 and 1. The effect contains 3 circle that grow bigger, wich use the fraction as radius with a offset of 0.2 to run after echother. The circles are then used for a displace.
+The visual effect is split into three parts: the trigger, the effect player, and the effect itself. The trigger uses a variable with a measured delay of 0.3 seconds and a threshold of 2000. It compares the current value with the value 0.3 seconds ago; if there is a change of more than 2000, a trigger signal is sent to the effect player. This consists of a timer, a duration, and logic to prevent the player from triggering again while it is running. While running, it outputs a fraction between 0 and 1. The effect contains three circles that grow larger, using the fraction as the radius with an offset of 0.2 so they follow each other. The circles are then used for a displacement effect.
 
 ![Network Visual Effect](img/touchdesigner_07.png)
 
 #### 4.3.4.2. Touch Indicator
-First we just added a text from 0 to 1 to indicate the touch. We simply took the normalized valuestram from the Arduino, added a lag update every 0.5 seconds, round the calues to every 0.1. In the text operator we used following expression for the text to make sure wo only display 3 characters of the value and added a string to show the goal.
+First, we just added a text display from 0 to 1 to indicate the touch. We simply took the normalized value stream from the Arduino, added a lag update every 0.5 seconds, and rounded the values to every 0.1. In the text operator, we used the following expression to ensure only three characters of the value are displayed, and added a string to show the goal:
 
 ```
 f"{str(op('touch_value_rounded')[0])[:3]} / 1"
@@ -639,18 +633,18 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 https://www.perplexity.ai/search/i-wanna-change-the-pitch-in-au-VEXmnUQ_SMq9Z_aOPQBT1w
 soat2022
 ## 4.5. Presentation
+The presentation went smoothly. People were fascinated by how the installation worked, especially since no cables or wiring were visible. The project structure in TouchDesigner also received positive feedback.
 
-The presentation went smoothly. People were fascinated by how the installation works despite not seeing any cables or wiring. Also, the project structure in Touchdesigner was complimented on. 
+The main critique was that the threads were still too delicate and not inviting enough to touch.
 
-The most critiqued thing was the threads still too delicate and not inviting to be touched. 
+People enjoyed taking off their shoes and triggering the maximum values in the visual.
 
-People also had fun taking off their shoes and triggering the max values in the visual.
+Overall, the project was very well received.
 
 ## 4.6. Reflection
 
 # ToDo
-- Audio
 - Spotlights
-- Goal Indicator
+- Little wooden box for the notice next to the installation
 - PC Setup
-- finalising docu & Abgabe
+- finalising Docu & Abgabe
