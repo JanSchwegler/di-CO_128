@@ -620,7 +620,7 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 | 3   | Arduino, Board, Resistor, USB Kabel          | Thomas / Media Dock                 | ▶️ Ausgeliehen   |
 | 4   | PC Beck                                      | Media Dock offiziell duch Ausleihe  | ✅ Zurückgegeben |
 | 5   | 2x Steckerleisten (Hausdienst, Schwarz)      | DI Raum 4. Stock                    | ▶️ Ausgeliehen   |
-| 6   | Monitor (DIV57) inkl. Strom- und HDMI-Kabel  | DI Raum Erdgeschoss durch Guillaume | ▶️ Ausgeliehen   |
+| 6   | Monitor (DIV57) inkl. Strom- und HDMI-Kabel  | DI Raum Erdgeschoss durch Guillaume | ✅ Zurückgegeben |
 | 7   | Tastatur (DI7654)                            | DI Raum Erdgeschoss durch Guillaume | ▶️ Ausgeliehen   |
 | 8   | Beamer                                       | Ausleihe offiziell                  | ▶️ Ausgeliehen   |
 | 9   | HDMI Kabel für Beamer                        | Ausleihe offiziell                  | ▶️ Ausgeliehen   |
@@ -629,7 +629,7 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 | 12  | 8 Kopfhörer (inkl. Adapter auf 3.5mm Klinke) | Ausleihe                            | ▶️ Ausgeliehen   |
 | 13  | 2 Audio Splitter                             | Ausleihe                            | ▶️ Ausgeliehen   |
 | 14  | MAC Mini M1 (soat2022)                       | Thomas / Media Dock                 | ▶️ Ausgeliehen   |
-| 15  | X                                            | X                                   | X               |
+| 15  | 2 Lampen                                     | Ausleihe                            | ▶️ Ausgeliehen   |
 | 16  | X                                            | X                                   | X               |
 | 17  | X                                            | X                                   | X               |
 | 18  | X                                            | X                                   | X               |
