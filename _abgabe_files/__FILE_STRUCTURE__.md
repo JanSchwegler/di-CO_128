@@ -1,12 +1,12 @@
 # File Structure
 
 📁 Icebreaker_Dominika.D_Jan.S_Joya.B (Project Folder)
-├── 📄 Icebreaker.docx              # Kurzdokumentation  
-├── 📄 miroboard.pdf  
-├── 📄 links.md                     # Link to our documentation and GitHub  
-├── 📄 Github.zip                   # Current state of our GitHub repository  
+├── 📄 Github.zip                   # Current state of our GitHub repository
+├── 📄 Icebreaker.docx              # Kurzdokumentation
+├── 📄 links.md                     # Link to our documentation and GitHub
+├── 📄 miroboard.pdf
 │
-├── 📁 program_files  
+├── 📁 program_files
 │   ├── 📄 touchdesigner.toe  
 │   │
 │   └── 📁 arduino  
