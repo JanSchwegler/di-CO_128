@@ -1,66 +1,71 @@
 # Crafting interactive narratives for art &amp; design <!-- omit from toc -->
 
-- [1. Touchdesigner Basics](#1-touchdesigner-basics)
-  - [1.1. Operator Families](#11-operator-families)
-  - [1.2. Specific Nodes](#12-specific-nodes)
-  - [1.3. Feedback Basic Setup](#13-feedback-basic-setup)
-  - [1.4. Noise Pointcloud Bacis Setup](#14-noise-pointcloud-bacis-setup)
-- [2. MCU - Micro Controller Unit](#2-mcu---micro-controller-unit)
-  - [2.1. Possible Sensors](#21-possible-sensors)
-  - [2.2. Gyroscope (GY-87)](#22-gyroscope-gy-87)
-- [3. Inspiration \& Art Projects](#3-inspiration--art-projects)
-  - [3.1. Iconic Interactive Art Projects](#31-iconic-interactive-art-projects)
-    - [3.1.1. GENMA (Genetic Manipulator)](#311-genma-genetic-manipulator)
-  - [3.2. Films](#32-films)
-    - [3.2.1. All that is solid](#321-all-that-is-solid)
-    - [3.2.2. The Mess](#322-the-mess)
-    - [3.2.3. Hardly Working](#323-hardly-working)
-    - [3.2.4. Writing for 5 min](#324-writing-for-5-min)
-  - [3.3. Inspiration «Possible Futures?»](#33-inspiration-possible-futures)
-    - [3.3.1. Marie-Eve Levasseur, Swiping compressed filtered love (et enfin, permettre l’incontrôlable), 2019, 12 min](#331-marie-eve-levasseur-swiping-compressed-filtered-love-et-enfin-permettre-lincontrôlable-2019-12-min)
-      - [3.3.1.1. In what form is the future presented in the example?](#3311-in-what-form-is-the-future-presented-in-the-example)
-      - [3.3.1.2. What story is being told, and who is telling it?](#3312-what-story-is-being-told-and-who-is-telling-it)
-      - [3.3.1.3. How is the story told? (Medium, mood, other aspects?)](#3313-how-is-the-story-told-medium-mood-other-aspects)
-      - [3.3.1.4. What present leads to the depicted future?](#3314-what-present-leads-to-the-depicted-future)
-      - [3.3.1.5. What does the artist aim to make visible?](#3315-what-does-the-artist-aim-to-make-visible)
-- [4. Group Project](#4-group-project)
-  - [4.1. Concept](#41-concept)
-    - [4.1.1. Exhaustion](#411-exhaustion)
-    - [4.1.2. Early Ideas](#412-early-ideas)
-    - [4.1.3. Concept \& Story](#413-concept--story)
-  - [4.2. Prototyping](#42-prototyping)
-    - [4.2.1. Inspiration / Idea](#421-inspiration--idea)
-    - [4.2.2. Research](#422-research)
-    - [4.2.3. First Touch Detection](#423-first-touch-detection)
-    - [4.2.4. Materials \& Interaction](#424-materials--interaction)
-      - [4.2.4.1. Crystals](#4241-crystals)
-    - [4.2.5. Multi Touch Sensor](#425-multi-touch-sensor)
-    - [4.2.6. TouchDesinger](#426-touchdesinger)
-      - [4.2.6.1. Voronoi](#4261-voronoi)
-      - [4.2.6.2. Ice](#4262-ice)
-    - [4.2.7. Installation](#427-installation)
-    - [4.2.8. Beamer Setup](#428-beamer-setup)
-  - [4.3. Production](#43-production)
-    - [4.3.1. Wooden Branch](#431-wooden-branch)
-    - [4.3.2. Hardware](#432-hardware)
-    - [4.3.3. Visuals](#433-visuals)
-    - [4.3.4. Interaction](#434-interaction)
-      - [4.3.4.1. Visual Effect](#4341-visual-effect)
-      - [4.3.4.2. Touch Indicator](#4342-touch-indicator)
-    - [Audio](#audio)
-    - [4.3.5. Text description](#435-text-description)
-    - [4.3.6. Final Setup](#436-final-setup)
-  - [4.4. Item List](#44-item-list)
-  - [4.5. Presentation](#45-presentation)
-  - [4.6. Reflection](#46-reflection)
+- [1. Module Material](#1-module-material)
+- [2. Touchdesigner Basics](#2-touchdesigner-basics)
+  - [2.1. Operator Families](#21-operator-families)
+  - [2.2. Specific Nodes](#22-specific-nodes)
+- [3. MCU - Micro Controller Unit](#3-mcu---micro-controller-unit)
+  - [3.1. Possible Sensors](#31-possible-sensors)
+  - [3.2. Gyroscope (GY-87)](#32-gyroscope-gy-87)
+- [4. Inspiration \& Art Projects](#4-inspiration--art-projects)
+  - [4.1. Iconic Interactive Art Projects](#41-iconic-interactive-art-projects)
+    - [4.1.1. GENMA (Genetic Manipulator)](#411-genma-genetic-manipulator)
+  - [4.2. Films](#42-films)
+    - [4.2.1. All that is solid](#421-all-that-is-solid)
+    - [4.2.2. The Mess](#422-the-mess)
+    - [4.2.3. Hardly Working](#423-hardly-working)
+    - [4.2.4. Writing for 5 min](#424-writing-for-5-min)
+  - [4.3. Inspiration «Possible Futures?»](#43-inspiration-possible-futures)
+    - [4.3.1. Marie-Eve Levasseur, Swiping compressed filtered love (et enfin, permettre l’incontrôlable), 2019, 12 min](#431-marie-eve-levasseur-swiping-compressed-filtered-love-et-enfin-permettre-lincontrôlable-2019-12-min)
+      - [4.3.1.1. In what form is the future presented in the example?](#4311-in-what-form-is-the-future-presented-in-the-example)
+      - [4.3.1.2. What story is being told, and who is telling it?](#4312-what-story-is-being-told-and-who-is-telling-it)
+      - [4.3.1.3. How is the story told? (Medium, mood, other aspects?)](#4313-how-is-the-story-told-medium-mood-other-aspects)
+      - [4.3.1.4. What present leads to the depicted future?](#4314-what-present-leads-to-the-depicted-future)
+      - [4.3.1.5. What does the artist aim to make visible?](#4315-what-does-the-artist-aim-to-make-visible)
+- [5. Group Project](#5-group-project)
+  - [5.1. Concept](#51-concept)
+    - [5.1.1. Exhaustion](#511-exhaustion)
+    - [5.1.2. Early Ideas](#512-early-ideas)
+    - [5.1.3. Concept \& Story](#513-concept--story)
+  - [5.2. Prototyping](#52-prototyping)
+    - [5.2.1. Inspiration / Idea](#521-inspiration--idea)
+    - [5.2.2. Research](#522-research)
+    - [5.2.3. First Touch Detection](#523-first-touch-detection)
+    - [5.2.4. Materials \& Interaction](#524-materials--interaction)
+      - [5.2.4.1. Crystals](#5241-crystals)
+    - [5.2.5. Multi Touch Sensor](#525-multi-touch-sensor)
+    - [5.2.6. TouchDesinger](#526-touchdesinger)
+      - [5.2.6.1. Voronoi](#5261-voronoi)
+      - [5.2.6.2. Ice](#5262-ice)
+    - [5.2.7. Installation](#527-installation)
+    - [5.2.8. Beamer Setup](#528-beamer-setup)
+  - [5.3. Production](#53-production)
+    - [5.3.1. Wooden Branch](#531-wooden-branch)
+    - [5.3.2. Hardware](#532-hardware)
+    - [5.3.3. Visuals](#533-visuals)
+    - [5.3.4. Interaction](#534-interaction)
+      - [5.3.4.1. Visual Effect](#5341-visual-effect)
+      - [5.3.4.2. Touch Indicator](#5342-touch-indicator)
+    - [5.3.5. Audio](#535-audio)
+    - [5.3.6. Text description](#536-text-description)
+    - [5.3.7. Final Setup](#537-final-setup)
+    - [5.3.8. Final Program Files](#538-final-program-files)
+  - [5.4. Item List](#54-item-list)
+  - [5.5. Presentation](#55-presentation)
+  - [5.6. Reflection](#56-reflection)
 
+# 1. Module Material
+- [Github Module](https://github.com/gu-ma/co_128_f2501/tree/main)
+- [Github Pages Module](https://gu-ma.github.io/co_128_f2501/)
+- [Github Pages Toolbox TouchDesigner](https://digitalideation.github.io/toolbox-touchdesigner/)
+- [Miro Board Organisation](https://miro.com/app/board/uXjVLsCBg4A=/)
 
-# 1. Touchdesigner Basics
+# 2. Touchdesigner Basics
 [Official Lerning Page](https://learn.derivative.ca/courses/100-fundamentals/)
 
 [Touchdesigner Wiki](https://docs.derivative.ca/)
 
-## 1.1. Operator Families
+## 2.1. Operator Families
 - [Components (COMPs)](https://docs.derivative.ca/Component)
 - [Texture Operators (TOPs)](https://docs.derivative.ca/TOP)
 - [Channel Operators (CHOPs)](https://docs.derivative.ca/CHOP)
@@ -72,20 +77,16 @@
 
 &copy; [https://docs.derivative.ca/OP_Create_Dialog](https://docs.derivative.ca/OP_Create_Dialog)
 
-## 1.2. Specific Nodes
+## 2.2. Specific Nodes
 - Traill: Visualize nubers over time
 - Filter: Smooth out change of values
 - Lag: Smooth uneven, ease in
 - Spring: spring on value changes
 - Fan: Snap to defined number of values
 
-## 1.3. Feedback Basic Setup
+# 3. MCU - Micro Controller Unit
 
-## 1.4. Noise Pointcloud Bacis Setup
-
-# 2. MCU - Micro Controller Unit
-
-## 2.1. Possible Sensors
+## 3.1. Possible Sensors
 
 | Sensor Type                   | Short Explanation         |
 | ----------------------------- | ------------------------- |
@@ -120,7 +121,7 @@
 | Chemical Sensor               | Detects chemicals         |
 | Environmental Sensor          | Monitors environment      |
 
-## 2.2. Gyroscope (GY-87)
+## 3.2. Gyroscope (GY-87)
 [Running the gyroscope on an Arduino Uno](https://electropeak.com/learn/interfacing-gy-87-10dof-imu-mpu6050-hmc5883l-bmp085-module-with-arduino/)
 
 - Connect your Arduino to your computer via USB.  
@@ -133,13 +134,13 @@ The provided code writes the sensor information to the "Serial Output". This can
 
 **The Arduino can only be connected to one Software! So the Arduino can't keep the connection with the Arduino IDE**
 
-# 3. Inspiration & Art Projects
+# 4. Inspiration & Art Projects
 
-## 3.1. Iconic Interactive Art Projects
+## 4.1. Iconic Interactive Art Projects
 
 [List with all Projects](https://gu-ma.github.io/co_128_f2501/notes/week02_day03.html)
 
-### 3.1.1. GENMA (Genetic Manipulator)
+### 4.1.1. GENMA (Genetic Manipulator)
 - **Artists:** Christa Sommerer and Laurent Mignonneau
 - **Overview:** An interactive installation where visitors can create and influence virtual creatures by sending messages.
 - **Website:** [https://interface.ufg.ac.at/christa-laurent/GENMA.html](https://interface.ufg.ac.at/christa-laurent/GENMA.html)
@@ -152,23 +153,26 @@ The provided code writes the sensor information to the "Serial Output". This can
 
 
 ![Holographic Visualization](img/genma/04_projection.jpg)
+&copy; [Yanis Deplazes - LinkedIn](https://www.linkedin.com/posts/yanis-deplazes_turning-weather-data-into-an-immersive-experience-activity-7317160431339372544-nTXG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADNrVocBVKcO5P9hOsECXsq_EsBUEghWFIY) / 
+[https://atmos.yanis.io/](https://atmos.yanis.io/) / 
+[Github](https://github.com/YanisDeplazes/atmos)
 
-## 3.2. Films
+## 4.2. Films
 
-### 3.2.1. All that is solid
+### 4.2.1. All that is solid
 - Gold in Ghana
 
-### 3.2.2. The Mess
+### 4.2.2. The Mess
 - Noise
 - Futuristic story told in the past
 
-### 3.2.3. Hardly Working
+### 4.2.3. Hardly Working
 - npc's in Red dead redemtion 2
 
-### 3.2.4. Writing for 5 min
+### 4.2.4. Writing for 5 min
 Erschöpfng ist keine energie mehr zu habne. keine Motivation. Viel Arbeit, keine Abwechsung. Ich bin erschöpft wenn ich keine Pausen habe. Wenn ich oft das gleiche mache ohne etwas daran zu ändern. Abwechslung ist wichtig um nicht erschöpft zu werden. bei allen Tätigkeiten werde ich erschöpft. es ist eine Balance zwischen erschöpfung und energie / recharge. es ist wichtig sich stetig zu erholen. machmal habe ich diese balance mehr im griff als zu anderen zeiten. Ich sollte mehr au diese banance achten. Es gibt viele Spakte welche mich erschöpfen lassen. meine eigene Energie oder sozial. Diese verschiedenen Energien im blick zu halten ist ebenfalls erschöpfend. Die Erholung ist dabei wichtig. Beim Arbeiten ist der Flow state für mich wichtig um nicht erschöpft zu werden. Der eigene Antrieb. intridische motivation. Externer zwang bringt mich aus dem gleichgewicht. ich bin nicht motiviert. das erschöpft mich. ich brache danach viel Zeit um micht wieder zu erholen.
 
-## 3.3. Inspiration «Possible Futures?»
+## 4.3. Inspiration «Possible Futures?»
 
 Questions:
 - In what form is the future presented in the example?
@@ -203,21 +207,21 @@ Of Whales, an immersive real-time video installation that offers a poetic medita
 Of Whales refocuses the source material’s profound meditation on knowledge, exoticism, and eroticism through a postcolonial lens, imagined from the perspective of the whale. The immensity of the ocean becomes a symbol of the unknown; reflections gesture to the presence of oblique perspectives and complexify the idea that any point of view is singular or straightforward. 
 [https://www.youtube.com/watch?v=pCmbQMpnDDU](https://www.youtube.com/watch?v=pCmbQMpnDDU)
 
-### 3.3.1. Marie-Eve Levasseur, Swiping compressed filtered love (et enfin, permettre l’incontrôlable), 2019, 12 min
+### 4.3.1. Marie-Eve Levasseur, Swiping compressed filtered love (et enfin, permettre l’incontrôlable), 2019, 12 min
 
-#### 3.3.1.1. In what form is the future presented in the example?
+#### 4.3.1.1. In what form is the future presented in the example?
 
 The future is presented in a speculative and poetic form. It's not a technical or utopian future, but rather an artistic and **critical projection of current trends** in online dating and technology. This imagined future involves "slow-tech" devices that allow **hormonal emissions to be transmitted and perceived over distance-creating a hybrid between biological intimacy and digital interaction**.
 
 -> Software and Device
 
-#### 3.3.1.2. What story is being told, and who is telling it?
+#### 4.3.1.2. What story is being told, and who is telling it?
 
 The story reflects an imagined evolution of dating technologies, where human pheromones and emotional signals are digitally translated and transmitted. It critiques how dating has become algorithmic, filtered, and consumer-like. 
 
 The narrator (possibly a voice-over or digital persona) presents the story from a reflective and somewhat speculative point of view—offering observations rather than a linear narrative. The storyteller could be interpreted as a future entity or consciousness looking back at present-day behavior.
 
-#### 3.3.1.3. How is the story told? (Medium, mood, other aspects?)
+#### 4.3.1.3. How is the story told? (Medium, mood, other aspects?)
 
 - Medium: Video art (12 minutes), combining visual collage, digital aesthetics, voice-over narration, and possibly synthetic imagery or simulations of tech devices.
 - Mood: Reflective, critical, and slightly melancholic. There is a sense of irony and emotional distance, yet also curiosity and vulnerability.
@@ -225,7 +229,7 @@ The narrator (possibly a voice-over or digital persona) presents the story from 
 
 -> Video -> office, physical device, phone, screenrecording
 
-#### 3.3.1.4. What present leads to the depicted future?
+#### 4.3.1.4. What present leads to the depicted future?
 
 The present depicted is dominated by:
 - Swipe-based dating apps (like Tinder) and the gamification of romantic connection.
@@ -234,7 +238,7 @@ The present depicted is dominated by:
 - A desire to "optimize" or control love and desire.
 This hyper-technologized and emotionally filtered present gives rise to the imagined future where hormonal signals are transmitted digitally to reintroduce uncontrollable, emotional complexity into digital interactions.
 
-#### 3.3.1.5. What does the artist aim to make visible?
+#### 4.3.1.5. What does the artist aim to make visible?
 
 Marie-Eve Levasseur wants to make visible:
 
@@ -245,15 +249,15 @@ Marie-Eve Levasseur wants to make visible:
 
 Ultimately, she encourages reflection on what is lost and what might be reimagined if we allowed the uncontrollable, emotional, and bodily dimensions of love back into our digital lives.
 
-# 4. Group Project
+# 5. Group Project
 
-## 4.1. Concept
+## 5.1. Concept
 
-### 4.1.1. Exhaustion
-As a class, we explored the topic of exhaustion—its content and what aspects interested us most. Based on a shared interest in recovery, sleep, and rest, Lucas, Cat, Nika, and I formed a group.
+### 5.1.1. Exhaustion
+As a class, we explored the topic of exhaustion—its content and what aspects interested us most. Based on a shared interest in recovery, sleep, and rest, Lucas, Katerina, Nika, and I formed a group.
 
-### 4.1.2. Early Ideas
-In our group of four, we each considered different ideas and aspects. We knew we would need to split up, so we discussed our interests in more detail. Two groups formed: Lucas and Cat, and Nika and me. While Lucas and Cat were more interested in the state of lying down, rest, and sleep, Nika and I focused on working together and caring for an entity, perhaps with an element of play.
+### 5.1.2. Early Ideas
+In our group of four, we each considered different ideas and aspects. We knew we would need to split up, so we discussed our interests in more detail. Two groups formed: Lucas and Katerina, and Nika and me. While Lucas and Katerina were more interested in the state of lying down, rest, and sleep, Nika and I focused on working together and caring for an entity, perhaps with an element of play.
 
 We then developed our concept around the narrative of working together to resist exhaustion. As a working claim, we called it "Together resisting exhaustion." We wanted an installation that would bring strangers together to work toward a shared goal. When visiting, it should be clear that one person alone cannot achieve the goal, or at least it would be very difficult. This should encourage people to ask for help and come together.
 
@@ -261,7 +265,7 @@ Our initial concept featured a plant as the main entity around which the interac
 
 Later, Joya joined our group and was interested in creating a physical interaction. We rethought our interaction point and adapted our concept and visualisation, while keeping the main narrative of bringing people together to achieve a higher goal as a group rather than alone.
 
-### 4.1.3. Concept & Story
+### 5.1.3. Concept & Story
 We gave the project the name "icebreaker", because the visuals start with ice and the installation brings starangers together. 
 
 There is a small notice next to the installation in case people are too afraid to interact with the project.
@@ -274,21 +278,21 @@ The idea is to represent the topic of "exhaustion" through the visuals. It start
 
 The concept of the project is "together resisting exhaustion." Collaboration happens at the threads. The goal is to bring people together and, by doing so, share and reduce some exhaustion from an abstract entity, as everyone takes a little part of it (by holding a thread). The focus is on actively participating (rather than being consumed by exhaustion) and caring for each other.
 
-## 4.2. Prototyping
+## 5.2. Prototyping
 
-### 4.2.1. Inspiration / Idea
+### 5.2.1. Inspiration / Idea
 Lucas, a classmate, once mentioned that it’s possible to measure the static electricity a human has. This inspired me to search for a solution using one-wire touch detection. I imagined it somewhat like a 3-pin sensor: two wires form the connection, and the third controls the amount of electricity. So, when you touch it, it functions like a [potentiometer](https://www.google.com/search?q=Potentiometer).
 
 Joya and Thomas mentioned that it would be easy to use two wires to detect a connection. While that would be a workable fix, it doesn’t serve the purpose as well as a single wire.
 
 I imagined connecting around 50 wires to this single one, so that all of them detect touch, and the intensity of touch adds up. This would suitably represent our idea of multiple people working together.
 
-### 4.2.2. Research
+### 5.2.2. Research
 Before we tried to find the right words to Google my idea, I explained my vision to [Perplexity](https://www.perplexity.ai/) and asked for ideas and keywords to google. In addition to that, Perplexity gave me two different approaches. After some discussion and researching the functionality, I decided to try one of Perplexity's suggestions.
 
 [Chat with Perplexity](https://www.perplexity.ai/search/i-have-an-arduino-uno-i-want-t-TmeZzg8hTVuNVF7Y_H6DYw#0)
 
-### 4.2.3. First Touch Detection
+### 5.2.3. First Touch Detection
 For the whiring I looked up some references.
 
 ``` md
@@ -336,7 +340,7 @@ To increase the static electricity, we tried touching the metal part of the tabl
   <source src="img/arduino_touch_03.mp4" type="video/mp4">
 </video>
 
-### 4.2.4. Materials & Interaction
+### 5.2.4. Materials & Interaction
 The next step was testing the setup with different threads and fabrics.
 
 ![Diffrenct Conductive Threds](img/arduino_threds_01.jpg)
@@ -348,7 +352,7 @@ You probably can’t see it, but here we hung some different threads and wires a
 
 No matter how many or which ones you touch, it reads the amount of electricity touching the wires. It was difficult to set up a stable connection for every single thread, so sometimes we got stable and reliable results, and other times we didn’t.
 
-#### 4.2.4.1. Crystals
+#### 5.2.4.1. Crystals
 As we thought about water and ice, transparent crystals came to mind as a visualisation of ice. So, we tried growing crystals on a wooden branch.
 
 ![Crystals](img/crystal_01.jpg)
@@ -357,7 +361,7 @@ This worked well. However, due to the ratio being slightly off, the crystals gre
 
 Later, we also considered that the interaction point needs to be inviting to touch. Crystals look nice, and people might want to give them a gentle touch, but not a firm grip—which wouldn’t be ideal for our installation.
 
-### 4.2.5. Multi Touch Sensor
+### 5.2.5. Multi Touch Sensor
 We wanted to try a different sensor, one that can read multiple touches at the same time. The downside is that the output data is binary: 0 or 1, meaning touch or no touch. First, we had to solder the connectors to the sensor.
 
 ![Multi Touch Sensor](img/arduino_sensor_01.jpg)
@@ -481,12 +485,12 @@ void loop() {
 }
 ```
 
-### 4.2.6. TouchDesinger
+### 5.2.6. TouchDesinger
 The Arduino writes the detected values to the serial output. This can be read in TouchDesigner using the **Serial DAT** operator. The input needs to be converted into numbers and rescaled to be used properly. In the example, the numbers are divided by 1000 to produce smaller values and then offset to ensure values remain above 1. The touch input is used to modify a noise texture.
 
 ![alt text](img/touchdesigner_01.png)
 
-#### 4.2.6.1. Voronoi
+#### 5.2.6.1. Voronoi
 To create a basic water drop visual, you can simply add a Voronoi texture and tweak the settings. TouchDesigner doesn’t include a Voronoi texture by default, so we tried to imitate this effect.
 
 ![Voronoi Visual](img/voronoi_01.png)
@@ -495,7 +499,7 @@ To create a basic water drop visual, you can simply add a Voronoi texture and tw
 
 This Voronoi setup is based on noise and feedback. The main issue is that it’s almost impossible to control the movement, especially the speed. While it creates a nice visual, it is not very adaptable.
 
-#### 4.2.6.2. Ice
+#### 5.2.6.2. Ice
 We wanted water as the main entity, with the visual changing based on parameters from the Arduino. Initially, we imagined it being icy, then gradually transitioning to a more liquid state, perhaps with some bubbles added later.
 
 First, we started with the more static, icy-like part. It’s a network with edges and feedback loops.
@@ -521,7 +525,7 @@ We needed another state of the visual to represent the final stage. It's the sam
 
 Finally, we created a final state that would be shown when all the wires are touched.
 
-### 4.2.7. Installation
+### 5.2.7. Installation
 
 To test the installation and interaction we connected the different parts. We put the frame to test the different wires in front of the beamer and connected it through the Arduino and TouchDesigner to the beamer.
 
@@ -533,7 +537,7 @@ to make the ineraction work, we just remaped the values accordingly so, when noo
 
 ![Interaction](img/installation_02.jpg)
 
-### 4.2.8. Beamer Setup
+### 5.2.8. Beamer Setup
 We wanted to test different lighting setups. We thought that the large beamer might overshadow our physical interaction point. We needed to balance this and perhaps provide some lighting for the interaction point itself. We also considered projecting our visual directly onto the interaction point. However, we preferred not to have any shadows on our beamer visuals and wanted them to remain clearly visible. This could be challenging if the visuals were projected onto the physical strings. To avoid the beamer shining directly into visitors' eyes, we tried to use indirect light from the beamer onto the strings. If we could balance the lighting, we envisioned having the visuals on a mobile wall—probably made of fabric—with the beamer on one side and the visitors and interaction point on the other.
 
 ``` markdown
@@ -556,33 +560,40 @@ We further experimented with different fabrics and densities.
 
 We couldn't find a good balance and think it's almost impossible to have the light shine through without blinding the visitors or losing the visuals on the fabric. Even a very thin fabric let almost no light through, and it was uncomfortable to look at because of the strong light.
 
-## 4.3. Production
+## 5.3. Production
 
-### 4.3.1. Wooden Branch
+### 5.3.1. Wooden Branch
+First, we created the tin drops. We melted some tin and poured it into cold water to form drops. We then had to drill a hole into each drop to attach them to a string. Initially, we had some difficulties finding enough tin and drilling the holes, but after some searching and trial and error, it worked as intended.
 
-![Hanging the branch](/img/HangingTheBranch.jpeg)
+Later, we arranged for someone from the "Hausdienst" to help hang the branch from the ceiling. We suspended it using nylon strings, one on each side and one in the middle. Afterwards, we added the strings with the tin drops.
 
-### 4.3.2. Hardware
+Unfortunately, the connection between the strings didn’t work properly at first. After a few unsuccessful attempts, we added another string running horizontally along the branch, connecting the hanging strings with the tin drops.
+
+To connect it to the Arduino, we added another conductive string. We knotted it to the horizontal connection string, led it upwards along the nylon string towards the ceiling, and then taped it to the wall. From there, we routed the string down to the ground, where the Arduino was located.
+
+![Hanging the branch](img/HangingTheBranch.jpeg)
+
+### 5.3.2. Hardware
 We had most of our important hardware from prototyping. The most essential items were the beamer, the Arduino, and a PC to run TouchDesigner. To avoid using one of our laptops for the festival, we borrowed a desktop PC from the MediaDock.
 
 ![PC](img/pc_01.jpg)
 
 Unfortunately, this PC did not have a built-in WLAN receiver, and we couldn’t get hold of an external one. So, we borrowed a Mac Mini M1 from the Media Dock.
 
-### 4.3.3. Visuals
+### 5.3.3. Visuals
 Since we already had some visuals, the main task was connecting them and controlling them with the Arduino.
 
 We have three different visuals for three states: the beginning, just before reaching the goal, and when the goal is reached. Two "Cross" TOPs were used to blend between the visuals.
 
-Because we had a value from 0 to 1 for the blending, we had to split that into 0–0.5 and 0.5–1. These values then had to be remapped to 0–1 to work with the Cross TOP.
+Because we had a value from 0 to 1 for the blending, we had to split that into 0 – 0.5 and 0.5 – 1. These values then had to be remapped to 0 – 1 to work with the Cross TOP.
 
 ![Blend Visuals](img/touchdesigner_04.png)
 
-To control the Cross TOP with Arduino, we took the value stream, set limits for "no touch" and "goal is reached," remapped the values from 0–1, and added a filter to smooth out the stream and avoid abrupt jumps.
+To control the Cross TOP with Arduino, we took the value stream, set limits for "no touch" and "goal is reached", remapped the values from 0 – 1, and added a filter to smooth out the stream and avoid abrupt jumps.
 
 ![Arduino Controls](img/touchdesigner_05.png)
 
-### 4.3.4. Interaction
+### 5.3.4. Interaction
 To make the interaction more understandable and responsive, we added features to make it more reactive to touch and release. This way, visitors knew their touch was recognized. We wanted to add the following:
 - Quick visual effect
 - Small sound effect
@@ -590,12 +601,12 @@ To make the interaction more understandable and responsive, we added features to
 
 For the final exhibition, we only included the visual effect.
 
-#### 4.3.4.1. Visual Effect
+#### 5.3.4.1. Visual Effect
 The visual effect is split into three parts: the trigger, the effect player, and the effect itself. The trigger uses a variable with a measured delay of 0.3 seconds and a threshold of 2000. It compares the current value with the value 0.3 seconds ago; if there is a change of more than 2000, a trigger signal is sent to the effect player. This consists of a timer, a duration, and logic to prevent the player from triggering again while it is running. While running, it outputs a fraction between 0 and 1. The effect contains three circles that grow larger, using the fraction as the radius with an offset of 0.2 so they follow each other. The circles are then used for a displacement effect.
 
 ![Network Visual Effect](img/touchdesigner_07.png)
 
-#### 4.3.4.2. Touch Indicator
+#### 5.3.4.2. Touch Indicator
 First, we just added a text display from 0 to 1 to indicate the touch. We simply took the normalized value stream from the Arduino, added a lag update every 0.5 seconds, and rounded the values to every 0.1. In the text operator, we used the following expression to ensure only three characters of the value are displayed, and added a string to show the goal:
 
 ```
@@ -604,25 +615,30 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 
 ![Network Touch Indicator](img/touchdesigner_06.png)
 
-### Audio
+### 5.3.5. Audio
 For the audio, we created two setups: One for the ambience and one for additional effects. Both are set up in the same way. We selected audio clips from the library [sonniss.com](https://sonniss.com/). We edited the clips in Adobe Audition to make them loopable and normalised them to the same volume level. In total, we used 11 audio clips: 4 for ambience and 7 for effects. 
 
 In TouchDesigner, we included the clips and controlled the volume of each one based on the state of the touch input.
 
 ![Touchdesigner Audio](img/touchdesigner_08.png)
 
-### 4.3.5. Text description
+### 5.3.6. Text description
 To encourage visitors to touch the wire and give them a hint to ask others for help, we created a small sign as a description of the installation. We didn’t want a long explanation, just something as short as possible, yet catchy and clear.
 
 ![Notice](img/Notice.jpeg)
 
-### 4.3.6. Final Setup
+### 5.3.7. Final Setup
 For the festival, we used the Mac Mini to run TouchDesigner, and a beamer to display the visuals. We had six headsets connected via two audio splitters for the sound, and used an Arduino to connect TouchDesigner with our branch installation. The branch was hung from the ceiling. It has multiple conductive strings attached, each with tin drops. We also used two spotlights to illuminate the branch and placed a sign with the descriptive notice nearby.
 
 ![Installation](img/installation_04.jpg) 
 ![Installation](img/installation_05.jpg)
+![Installation](img/installation_06.jpg)
 
-## 4.4. Item List
+### 5.3.8. Final Program Files
+- [Arduino](https://github.com/JanSchwegler/di-CO_128/blob/cf4eb02a5976f424e078538fe8e7fcae79e6db17/_abgabe_files/arduino/arduino.ino)
+- [TouchDesigner](https://github.com/JanSchwegler/di-CO_128/blob/main/_abgabe_files/touchdesigner.toe)
+
+## 5.4. Item List
 
 | Nr  | Item                                         | Source                              | State           |
 | --- | -------------------------------------------- | ----------------------------------- | --------------- |
@@ -643,7 +659,7 @@ For the festival, we used the Mac Mini to run TouchDesigner, and a beamer to dis
 | 14  | MAC Mini M1 (soat2022)                       | Thomas / Media Dock                 | ▶️ Ausgeliehen   |
 | 15  | 2 Lampen                                     | Ausleihe                            | ✅ Zurückgegeben |
 
-## 4.5. Presentation
+## 5.5. Presentation
 The presentation went smoothly. People were fascinated by how the installation worked, especially since no cables or wiring were visible. The project structure in TouchDesigner also received positive feedback.
 
 The main critique was that the threads were still too delicate and not inviting enough to touch.
@@ -652,27 +668,17 @@ People enjoyed taking off their shoes and triggering the maximum values in the v
 
 Overall, the project was very well received.
 
-## 4.6. Reflection
-- organisation was to late and not clear
-- Inputs were somtimes not zielführend
-- see project was good
-- teammbuilding was good
-- To much conceptual
+## 5.6. Reflection
+We really enjoyed the module, its possibilities, and the many things we learned. Along the way, there were some challenges. 
 
-- invisible connected -> magical how it works
-- Fitting colors and look
+The organisation had its ups and downs, sometimes the expectations and plans weren’t very clear. Our team had some issues with the communication via Teams. As we often saw messages a few days late. Additionally, some information about the hubs and the festival came a bit late. In the final week of the module, there was very little communication between the groups. Some wrapup's to plan the space, ideas, sound and headphones could have been helpful.
 
-- installation wasnt quite clear
-- People were happy about the audio
-- was nice to see how people experiment with the installation, wonder how it works
-- most of the time multiple people touched
+The interest-oriented teambuilding was great, though it was a bit difficult, since we didn’t have specific ideas at the beginning. The teamwork and mentoring worked very well for us. We personally preferred not having fixed time slots and instead appreciated the flexibil talks when needed throughout the day. We really enjoyed the unlimited possibilities of the project, the long introduction to TouchDesigner gave us a strong foundation, but we also appreciated not being tied to a specific technique. We felt that many of our discussions and mentoring sessions were focused on conceptual aspects. We would have preferred to experiment and explore more the technical possibilities.
 
+We’re very happy and proud of our installation. We were fascinated by the almost invisible connection and how everything came together in the end. It was great to see how magical it felt for the visitors. Their reactions and questions showed genuine curiosity. We’re also pleased with the overall aesthetic, especially the colours and how well everything worked together, given the limited time we had at the end to set up the branch, headphones, and lighting.
 
+The installation itself wasn’t always clear to visitors, so there’s definitely room to improve. Also, how the concept is communicated. Still, people responded very positively to the audio element. It was a joy to watch them experiment with the installation and wonder how it worked. Most of the time, several people at once interacted with the installation, which fit perfectly with our aim of collective input. But on the other hand, not a lot of people were asking strangers for help.
 
-Overall, the project offered a valuable learning experience, though there were some challenges along the way. The organisation started too late and often lacked clarity, which made the process more difficult at times. Some of the input we received wasn’t always helpful or goal-oriented.
+All in all, we had a very positive experience with this module. We learned a lot about TouchDesigner and interactive possibilities. We’re grateful for the help, the engagement, and the freedom we had throughout. We always received help when needed, with a genuine intention to support and improve our work.
 
-However, seeing the project take shape was rewarding. Team-building within the group worked well, and we supported each other throughout. While the project leaned heavily towards the conceptual side, this did contribute to a strong underlying idea.
-
-One of the most fascinating aspects was the invisible connection between touch and response—it felt almost magical to see how it worked. The visual design, including the colours and overall look, fit the theme nicely.
-
-There were still areas for improvement. The installation itself wasn’t always immediately clear to visitors, and the concept could have been communicated more effectively. That said, people responded very positively to the audio element, and it was great to see them experimenting with the installation—curious, wondering how it worked. Most of the time, multiple people interacted with it simultaneously, which matched our intention of collective input beautifully.
+We’re proud of our installation and what we achieved.
