@@ -47,12 +47,12 @@
     - [4.3.4. Interaction](#434-interaction)
       - [4.3.4.1. Visual Effect](#4341-visual-effect)
       - [4.3.4.2. Touch Indicator](#4342-touch-indicator)
+    - [Audio](#audio)
     - [4.3.5. Text description](#435-text-description)
     - [4.3.6. Final Setup](#436-final-setup)
   - [4.4. Item List](#44-item-list)
   - [4.5. Presentation](#45-presentation)
   - [4.6. Reflection](#46-reflection)
-- [ToDo](#todo)
 
 
 # 1. Touchdesigner Basics
@@ -567,6 +567,8 @@ We had most of our important hardware from prototyping. The most essential items
 
 ![PC](img/pc_01.jpg)
 
+Unfortunately, this PC did not have a built-in WLAN receiver, and we couldn’t get hold of an external one. So, we borrowed a Mac Mini M1 from the Media Dock.
+
 ### 4.3.3. Visuals
 Since we already had some visuals, the main task was connecting them and controlling them with the Arduino.
 
@@ -586,6 +588,8 @@ To make the interaction more understandable and responsive, we added features to
 - Small sound effect
 - Touch indicator, to show how much energy is currently in the system
 
+For the final exhibition, we only included the visual effect.
+
 #### 4.3.4.1. Visual Effect
 The visual effect is split into three parts: the trigger, the effect player, and the effect itself. The trigger uses a variable with a measured delay of 0.3 seconds and a threshold of 2000. It compares the current value with the value 0.3 seconds ago; if there is a change of more than 2000, a trigger signal is sent to the effect player. This consists of a timer, a duration, and logic to prevent the player from triggering again while it is running. While running, it outputs a fraction between 0 and 1. The effect contains three circles that grow larger, using the fraction as the radius with an offset of 0.2 so they follow each other. The circles are then used for a displacement effect.
 
@@ -600,9 +604,23 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 
 ![Network Touch Indicator](img/touchdesigner_06.png)
 
+### Audio
+For the audio, we created two setups: One for the ambience and one for additional effects. Both are set up in the same way. We selected audio clips from the library [sonniss.com](https://sonniss.com/). We edited the clips in Adobe Audition to make them loopable and normalised them to the same volume level. In total, we used 11 audio clips: 4 for ambience and 7 for effects. 
+
+In TouchDesigner, we included the clips and controlled the volume of each one based on the state of the touch input.
+
+![Touchdesigner Audio](img/touchdesigner_08.png)
+
 ### 4.3.5. Text description
+To encourage visitors to touch the wire and give them a hint to ask others for help, we created a small sign as a description of the installation. We didn’t want a long explanation, just something as short as possible, yet catchy and clear.
+
+![Notice](img/Notice.jpeg)
 
 ### 4.3.6. Final Setup
+For the festival, we used the Mac Mini to run TouchDesigner, and a beamer to display the visuals. We had six headsets connected via two audio splitters for the sound, and used an Arduino to connect TouchDesigner with our branch installation. The branch was hung from the ceiling. It has multiple conductive strings attached, each with tin drops. We also used two spotlights to illuminate the branch and placed a sign with the descriptive notice nearby.
+
+![Installation](img/installation_04.jpg) 
+![Installation](img/installation_05.jpg)
 
 ## 4.4. Item List
 
@@ -613,25 +631,18 @@ f"{str(op('touch_value_rounded')[0])[:3]} / 1"
 | 2   | Hardware intoduction Arduino                 | Thomas / Media Dock                 | ✅ Zurückgegeben |
 | 3   | Arduino, Board, Resistor, USB Kabel          | Thomas / Media Dock                 | ▶️ Ausgeliehen   |
 | 4   | PC Beck                                      | Media Dock offiziell duch Ausleihe  | ✅ Zurückgegeben |
-| 5   | 2x Steckerleisten (Hausdienst, Schwarz)      | DI Raum 4. Stock                    | ▶️ Ausgeliehen   |
+| 5   | 2x Steckerleisten (Hausdienst, Schwarz)      | DI Raum 4. Stock                    | ✅ Zurückgegeben |
 | 6   | Monitor (DIV57) inkl. Strom- und HDMI-Kabel  | DI Raum Erdgeschoss durch Guillaume | ✅ Zurückgegeben |
-| 7   | Tastatur (DI7654)                            | DI Raum Erdgeschoss durch Guillaume | ▶️ Ausgeliehen   |
-| 8   | Beamer                                       | Ausleihe offiziell                  | ▶️ Ausgeliehen   |
-| 9   | HDMI Kabel für Beamer                        | Ausleihe offiziell                  | ▶️ Ausgeliehen   |
+| 7   | Tastatur (DI7654)                            | DI Raum Erdgeschoss durch Guillaume | ✅ Zurückgegeben |
+| 8   | Beamer                                       | Ausleihe offiziell                  | ✅ Zurückgegeben |
+| 9   | HDMI Kabel für Beamer                        | Ausleihe offiziell                  | ✅ Zurückgegeben |
 | 10  | Grünes LAN Kabel                             | Media Dock                          | ✅ Zurückgegeben |
-| 11  | PC Stromkabel                                | Ausleihe (inoffiziell)              | ▶️ Ausgeliehen   |
-| 12  | 8 Kopfhörer (inkl. Adapter auf 3.5mm Klinke) | Ausleihe                            | ▶️ Ausgeliehen   |
-| 13  | 2 Audio Splitter                             | Ausleihe                            | ▶️ Ausgeliehen   |
+| 11  | PC Stromkabel                                | Ausleihe (inoffiziell)              | ✅ Zurückgegeben |
+| 12  | 8 Kopfhörer (inkl. Adapter auf 3.5mm Klinke) | Ausleihe                            | ✅ Zurückgegeben |
+| 13  | 2 Audio Splitter                             | Ausleihe                            | ✅ Zurückgegeben |
 | 14  | MAC Mini M1 (soat2022)                       | Thomas / Media Dock                 | ▶️ Ausgeliehen   |
-| 15  | 2 Lampen                                     | Ausleihe                            | ▶️ Ausgeliehen   |
-| 16  | X                                            | X                                   | X               |
-| 17  | X                                            | X                                   | X               |
-| 18  | X                                            | X                                   | X               |
-| 19  | X                                            | X                                   | X               |
-| 20  | X                                            | X                                   | X               |
+| 15  | 2 Lampen                                     | Ausleihe                            | ✅ Zurückgegeben |
 
-https://www.perplexity.ai/search/i-wanna-change-the-pitch-in-au-VEXmnUQ_SMq9Z_aOPQBT1w
-soat2022
 ## 4.5. Presentation
 The presentation went smoothly. People were fascinated by how the installation worked, especially since no cables or wiring were visible. The project structure in TouchDesigner also received positive feedback.
 
@@ -642,9 +653,26 @@ People enjoyed taking off their shoes and triggering the maximum values in the v
 Overall, the project was very well received.
 
 ## 4.6. Reflection
+- organisation was to late and not clear
+- Inputs were somtimes not zielführend
+- see project was good
+- teammbuilding was good
+- To much conceptual
 
-# ToDo
-- Spotlights
-- Little wooden box for the notice next to the installation
-- PC Setup
-- finalising Docu & Abgabe
+- invisible connected -> magical how it works
+- Fitting colors and look
+
+- installation wasnt quite clear
+- People were happy about the audio
+- was nice to see how people experiment with the installation, wonder how it works
+- most of the time multiple people touched
+
+
+
+Overall, the project offered a valuable learning experience, though there were some challenges along the way. The organisation started too late and often lacked clarity, which made the process more difficult at times. Some of the input we received wasn’t always helpful or goal-oriented.
+
+However, seeing the project take shape was rewarding. Team-building within the group worked well, and we supported each other throughout. While the project leaned heavily towards the conceptual side, this did contribute to a strong underlying idea.
+
+One of the most fascinating aspects was the invisible connection between touch and response—it felt almost magical to see how it worked. The visual design, including the colours and overall look, fit the theme nicely.
+
+There were still areas for improvement. The installation itself wasn’t always immediately clear to visitors, and the concept could have been communicated more effectively. That said, people responded very positively to the audio element, and it was great to see them experimenting with the installation—curious, wondering how it worked. Most of the time, multiple people interacted with it simultaneously, which matched our intention of collective input beautifully.
