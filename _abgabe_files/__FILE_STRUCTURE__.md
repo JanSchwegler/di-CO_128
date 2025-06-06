@@ -7,7 +7,10 @@
 ├── 📄 miroboard.pdf
 │
 ├── 📁 program_files
-│   ├── 📄 touchdesigner.toe  
+│   ├── 📄 touchdesigner.toe
+│   ├── 📁 audio
+│   │   ├── 📁 ambiance
+│   │   └── 📁 effects
 │   │
 │   └── 📁 arduino  
 │       └── 📄 arduino.ino  
