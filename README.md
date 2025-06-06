@@ -633,6 +633,7 @@ For the festival, we used the Mac Mini to run TouchDesigner, and a beamer to dis
 ![Installation](img/installation_04.jpg) 
 ![Installation](img/installation_05.jpg)
 ![Installation](img/installation_06.jpg)
+![Installation](img/installation_07.jpg)
 
 ### 5.3.8. Final Program Files
 - [Arduino](https://github.com/JanSchwegler/di-CO_128/blob/cf4eb02a5976f424e078538fe8e7fcae79e6db17/_abgabe_files/arduino/arduino.ino)
