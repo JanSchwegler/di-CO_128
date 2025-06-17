@@ -646,7 +646,7 @@ For the festival, we used the Mac Mini to run TouchDesigner, and a beamer to dis
 | 1   | Conductive Fabric                            | DI CO "Spielst du mit?"             | ✅ Zurückgegeben |
 | 1   | Conductive Thred                             | DI CO "Spielst du mit?"             | ✅ Zurückgegeben |
 | 2   | Hardware intoduction Arduino                 | Thomas / Media Dock                 | ✅ Zurückgegeben |
-| 3   | Arduino, Board, Resistor, USB Kabel          | Thomas / Media Dock                 | ▶️ Ausgeliehen   |
+| 3   | Arduino, Board, Resistor, USB Kabel          | Thomas / Media Dock                 | ✅ Zurückgegeben |
 | 4   | PC Beck                                      | Media Dock offiziell duch Ausleihe  | ✅ Zurückgegeben |
 | 5   | 2x Steckerleisten (Hausdienst, Schwarz)      | DI Raum 4. Stock                    | ✅ Zurückgegeben |
 | 6   | Monitor (DIV57) inkl. Strom- und HDMI-Kabel  | DI Raum Erdgeschoss durch Guillaume | ✅ Zurückgegeben |
@@ -657,7 +657,7 @@ For the festival, we used the Mac Mini to run TouchDesigner, and a beamer to dis
 | 11  | PC Stromkabel                                | Ausleihe (inoffiziell)              | ✅ Zurückgegeben |
 | 12  | 8 Kopfhörer (inkl. Adapter auf 3.5mm Klinke) | Ausleihe                            | ✅ Zurückgegeben |
 | 13  | 2 Audio Splitter                             | Ausleihe                            | ✅ Zurückgegeben |
-| 14  | MAC Mini M1 (soat2022)                       | Thomas / Media Dock                 | ▶️ Ausgeliehen   |
+| 14  | MAC Mini M1 (soat2022)                       | Thomas / Media Dock                 | ✅ Zurückgegeben |
 | 15  | 2 Lampen                                     | Ausleihe                            | ✅ Zurückgegeben |
 
 ## 5.5. Presentation
